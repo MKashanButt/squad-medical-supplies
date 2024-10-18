@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    padding: 0 20px;
+    align-items: center;
+    background-color: rgba(4, 116, 237, 0.4);
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.header .logo {
+    width: 40%;
+    height: 20%;
+}
+
+.header nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header .headerBtn {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--yellow);
+    background-color: var(--yellow);
+    cursor: pointer;
+    color: white;
+}
+
+.header .headerBtn:hover {
+    background-color: var(--blue);
+    border: 2px solid white;
+    color: white;
+}
