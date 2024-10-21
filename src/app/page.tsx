@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import PopupForm from "@/components/PopupForm";
@@ -13,7 +13,10 @@ import styles from "@/assets/css/Home.module.css"
 import "swiper/css";
 import "swiper/css/navigation";
 
-import HeroBg from "@/assets/images/hero-bg.jpg"
+import HeroSlideOne from "@/assets/images/hero-slider-three.png"
+import HeroSlideTwo from "@/assets/images/hero-slider-one.jpg"
+import HeroSlideThree from "@/assets/images/hero-slider-two.jpg"
+
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import BraceSleves from "@/assets/images/brace-sleves.jpg"
 import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
@@ -23,8 +26,12 @@ import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 import AboutUs from "@/assets/images/about-us.png"
+import Link from "next/link";
 
 export default function Home() {
+  const navigationNextRef = useRef(null);
+  const navigationPrevRef = useRef(null);
+
   useEffect(() => {
     const target = document.getElementById('stats');
 
@@ -51,93 +58,57 @@ export default function Home() {
       <PopupForm />
       <Header />
       <section className={styles.hero}>
-        <div className={styles.stage}>
-          <div className={styles.content}>
-            <h2>Welcome to Health Med</h2>
-            <p>Where your health and comfort are our top priorities. Since our
-              founding in 2020, we've had the privilege of serving over 1,000 patients, offering a wide range
-              of
-              durable medical equipment designed to improve your quality of life.</p>
-            <button>Contact Us</button>
+        <Swiper className={styles.overlaySlider}
+          modules={[Navigation, A11y, Autoplay]}
+          slidesPerView={1}
+          autoplay
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current,
+          }}
+          loop
+        >
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.overlay}></div>
+            <Image src={HeroSlideOne} alt="" className={styles.image} />
+            <div className={styles.content}>
+              <h1 className={styles.heading}>Squad Medical Supplies</h1>
+              <p>Durable equipment and disposable medical supplies delivered to your home. </p>
+              <button className="primary">Contact Us</button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.overlay}></div>
+            <Image src={HeroSlideTwo} alt="" className={styles.image} />
+            <div className={styles.content}>
+              <h1 className={styles.heading}>Expanding Our Presence</h1>
+              <p>Shipping to: Florida, New jersey, Texas, North & South Carolina</p>
+              <button className="primary">Contact Us</button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slide}>
+            <div className={styles.overlay}></div>
+            <Image src={HeroSlideThree} alt="" className={styles.image} />
+            <div className={styles.content}>
+              <h1 className={styles.heading}>APD provider</h1>
+              <p>Caring for children. We are a provider for Agency for Persons with Disabilities (APD) Learn how to apply here so you can spend less time worrying about their medical supplies</p>
+              <button className="primary">Learn More</button>
+            </div>
+          </SwiperSlide>
+          <div className="customNavigation">
+            <button ref={navigationPrevRef}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M328 112L184 256l144 144" />
+              </svg>
+            </button>
+            <button ref={navigationNextRef}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M184 112l144 144-144 144" />
+              </svg>
+            </button>
           </div>
-          <form action="/form.php" method="post" id="contactUs">
-            <h2>Get your desired Medical equipment at little or no cost</h2>
-            <p>Enter your information below in this quick profile to check your eligibility.</p>
-            <div className={styles.stage}>
-              <div className={styles.field}>
-                <label htmlFor="fname">First Name:</label>
-                <input type="text" name="fname" id="fname" />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="lname">Last Name:</label>
-                <input type="text" name="lname" id="lname" />
-              </div>
-            </div>
-            <div className={styles.stage}>
-              <div className={styles.field} style={{ alignItems: "baseline" }}>
-                <label htmlFor="name">Gender:</label>
-                <select name="gender" id="gender">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-              <div className={styles.field} style={{ alignItems: "baseline" }}>
-                <label htmlFor="saddress">Street Address:</label>
-                <textarea name="saddress" id="saddress"></textarea>
-              </div>
-            </div>
-            <div className={styles.stage}>
-              <div className={styles.field}>
-                <label htmlFor="city">City:</label>
-                <input type="text" name="city" id="city" />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="state">State:</label>
-                <input type="text" name="state" id="state" />
-              </div>
-            </div>
-            <div className={styles.stage}>
-              <div className={styles.field}>
-                <label htmlFor="zip">Zip:</label>
-                <input type="text" name="zip" id="zip" />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="number">Phone no:</label>
-                <input type="text" name="number" id="number" />
-              </div>
-            </div>
-            <div className={styles.stage}>
-              <div className={styles.field}>
-                <label htmlFor="dob">Date Of Birth:</label>
-                <input type="date" name="dob" id="dob" />
-              </div>
-              <div className={styles.field}>
-                <label htmlFor="bestTimeToContact">Best Time To Contact:</label>
-                <input type="text" name="bestTimeToContact" id="bestTimeToContact" />
-              </div>
-            </div>
-            <div className={styles.field} style={{ alignItems: "baseline" }}>
-              <input type="checkbox" name="consent" id="consent" />
-              <p>
-                By tapping the "Submit" button, I expressly endorse healthmed and Backpain Discount
-                Club,Pain
-                Center to call me or send me recorded messages or messages about their Solid wellbeing,
-                Diabetic
-                Supplies, or other Clinical things using electronic advancement to my telephone/cell number
-                I
-                entered already. I understand that I am not supposed to give my consent as a condition of
-                any
-                purchase.
-              </p>
-            </div>
-            <button name="submit">See If I Qualify</button>
-          </form>
-        </div>
-        <Image src={HeroBg}
-          alt="" />
-        <div className={styles.overlay}></div>
-
-      </section >
+        </Swiper>
+      </section>
       <section className={styles.whatWeDo}>
         <div className={styles.head}>
           <div style={{ display: "flex", flexDirection: "column", gap: "5px", width: "30%" }}>
