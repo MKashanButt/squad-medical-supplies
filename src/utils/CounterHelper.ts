@@ -1,8 +1,8 @@
 export function counter(id: string) {
-    let count = document.getElementById(id) as HTMLElement;
-    let statesNumber = 5
-    let experienceNumber = 80
-    let patientNumber = 1100
+    const count = document.getElementById(id) as HTMLElement;
+    const statesNumber = 5
+    const experienceNumber = 80
+    const patientNumber = 1100
     let i = 0
 
     if (count) {

@@ -26,7 +26,6 @@ import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 import AboutUs from "@/assets/images/about-us.png"
-import Link from "next/link";
 
 export default function Home() {
   const navigationNextRef = useRef(null);

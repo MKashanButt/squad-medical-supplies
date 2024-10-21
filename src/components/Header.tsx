@@ -11,7 +11,7 @@ export default function Header() {
     const pathname = usePathname()
     return (
         <>
-            {/* <ImportantAlert /> */}
+            <ImportantAlert />
             <div className={styles.contact}>
                 <div className={styles.socials}>
                     <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
