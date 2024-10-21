@@ -64,7 +64,6 @@ export default function PopupForm() {
                     </div>
                     <div className="field" style={{ alignItems: 'baseline' }}>
                         <input type="checkbox" name="consent" id="consent" />
-
                         <p>
                             By tapping the &quot;Submit&quot; button, I expressly endorse healthmed and Backpain Discount
                             Club, Pain Center to call me or send me recorded messages or messages about their Solid wellbeing,
