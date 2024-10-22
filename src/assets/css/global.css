@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-  --blue: #1E82EE;
+  --blue: #2887CA;
   --yellow: #F18901;
 }
 
@@ -21,6 +21,7 @@ html {
 }
 
 .important-info {
+  width: 100%;
   background-color: rgba(30, 130, 238, 0.7);
   color: white;
   padding: 10px 20px;
@@ -29,7 +30,7 @@ html {
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }

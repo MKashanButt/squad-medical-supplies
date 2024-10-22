@@ -27,6 +27,11 @@ import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 import AboutUs from "@/assets/images/about-us.png"
 
+import aetna from '@/assets/images/aetna-insurance.png'
+import humana from '@/assets/images/humana-insurance.jpg'
+import molina from '@/assets/images/molina-insurance.png'
+import wellcare from '@/assets/images/wellcare-insurance.png'
+
 export default function Home() {
   const navigationNextRef = useRef(null);
   const navigationPrevRef = useRef(null);
@@ -54,8 +59,6 @@ export default function Home() {
 
   return (
     <main>
-      <PopupForm />
-      <Header />
       <section className={styles.hero}>
         <Swiper className={styles.overlaySlider}
           modules={[Navigation, A11y, Autoplay]}
@@ -339,7 +342,26 @@ export default function Home() {
           <a href=""><button>Contact Us at +1 (954) 417 7926</button></a>
         </div>
       </section>
-      <Footer />
+      <section className={styles.insurances}>
+        <h2>Insurances We Accept</h2>
+        <p>Know if you are covered by our ever growing list of Health Plans</p>
+        <div className={styles.stage}>
+          <Image src={aetna} alt="aetna insurance logo" />
+          <Image src={humana} alt="humana insurance logo" />
+          <Image src={molina} alt="molina insurance logo" />
+          <Image src={wellcare} alt="wellcare insurance logo" />
+        </div>
+      </section>
+      <section className={styles.cta}>
+        <div className={styles.overlay}></div>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h2>Need Help?</h2>
+            <p>Get in touch now and get free consultation</p>
+          </div>
+          <button className="primary">+1 (404) 442-2019</button>
+        </div>
+      </section>
     </main >
   );
 }
