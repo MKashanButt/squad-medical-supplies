@@ -1,11 +1,19 @@
+import { useState } from "react"
+
 export default function ImportantAlert() {
+    const [display, setDisplayOption] = useState(true);
     return (
-        <div className="important-info">
-            <p>Important Information in regard of COVID19</p>
-            <div className="info-buttons">
-                <button className="close-btn">CLOSE</button>
-                <button className="read-btn">READ</button>
-            </div>
-        </div>
+        <>
+            {
+                display &&
+                <div className="importantInfo">
+                    <p>Important Information in regard of COVID19</p>
+                    <div className="infoButtons">
+                        <button onClick={() => setDisplayOption(!display)}>Close</button>
+                        <button>Read</button>
+                    </div>
+                </div>
+            }
+        </>
     )
 }

@@ -20,7 +20,7 @@ html {
   text-decoration: none;
 }
 
-.important-info {
+.importantInfo {
   width: 100%;
   background-color: rgba(30, 130, 238, 0.7);
   color: white;
@@ -35,16 +35,16 @@ html {
   z-index: 1000;
 }
 
-.important-info p {
+.importantInfo p {
   margin: 0;
 }
 
-.info-buttons {
+.infoButtons {
   display: flex;
   gap: 10px;
 }
 
-.important-info button {
+.importantInfo button {
   padding: 5px 15px;
   border: none;
   cursor: pointer;
@@ -52,27 +52,9 @@ html {
   transition: all 0.3s ease;
 }
 
-.important-info .close-btn {
-  background-color: #F18901;
+.importantInfo button {
+  background-color: var(--yellow);
   color: white;
-}
-
-.important-info .close-btn:hover {
-  background-color: #d67a01;
-}
-
-.important-info .read-btn {
-  background-color: #FFD700;
-  color: #1E82EE;
-}
-
-.important-info .read-btn:hover {
-  background-color: #e6c200;
-}
-
-.important-info .contact-info {
-  font-size: 12px;
-  font-weight: normal;
 }
 
 .braceDialog {
@@ -202,8 +184,8 @@ html {
 }
 
 .active-link {
-  text-decoration: underline;
-  text-underline-offset: 4;
+  background-color: var(--blue);
+  color: white;
 }
 
 @keyframes bounce2 {

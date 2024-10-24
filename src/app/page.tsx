@@ -1,11 +1,9 @@
 "use client"
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import Header from "@/components/Header";
-import PopupForm from "@/components/PopupForm";
-import Footer from "@/components/Footer";
 import { toggleDialog } from "@/utils/DialogHelper";
 import { counter } from "@/utils/CounterHelper";
+import ProductSlider from "@/components/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, Navigation } from "swiper/modules";
 import styles from "@/assets/css/Home.module.css"
@@ -18,19 +16,13 @@ import HeroSlideTwo from "@/assets/images/hero-slider-one.jpg"
 import HeroSlideThree from "@/assets/images/hero-slider-two.jpg"
 
 import KneeBraces from "@/assets/images/knee-braces.jpg"
-import BraceSleves from "@/assets/images/brace-sleves.jpg"
-import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
-import Wheelchairs from "@/assets/images/wheelchairs.jpg"
-import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
-import HipBraces from "@/assets/images/hip-braces.jpg"
-import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
+import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
 import AboutUs from "@/assets/images/about-us.png"
-
-import aetna from '@/assets/images/aetna-insurance.png'
-import humana from '@/assets/images/humana-insurance.jpg'
-import molina from '@/assets/images/molina-insurance.png'
-import wellcare from '@/assets/images/wellcare-insurance.png'
+import aetna from "@/assets/images/aetna-insurance.png"
+import humana from "@/assets/images/humana-insurance.jpg"
+import molina from "@/assets/images/molina-insurance.png"
+import wellcare from "@/assets/images/wellcare-insurance.png"
 
 export default function Home() {
   const navigationNextRef = useRef(null);
@@ -70,13 +62,16 @@ export default function Home() {
           }}
           loop
         >
-          <SwiperSlide className={styles.slide}>
+          <SwiperSlide className={styles.slide} style={{ justifyContent: 'center' }}>
             <div className={styles.overlay}></div>
             <Image src={HeroSlideOne} alt="" className={styles.image} />
-            <div className={styles.content}>
+            <div className={styles.content} style={{
+              width: '80%',
+              textAlign: 'center'
+            }}>
               <h1 className={styles.heading}>Squad Medical Supplies</h1>
               <p>Durable equipment and disposable medical supplies delivered to your home. </p>
-              <button className="primary">Contact Us</button>
+              <button className="primary" style={{ margin: 'auto' }}>Contact Us</button>
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
@@ -88,7 +83,7 @@ export default function Home() {
               <button className="primary">Contact Us</button>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
+          <SwiperSlide className={styles.slide} style={{ justifyContent: 'end' }}>
             <div className={styles.overlay}></div>
             <Image src={HeroSlideThree} alt="" className={styles.image} />
             <div className={styles.content}>
@@ -166,7 +161,7 @@ export default function Home() {
               to the patient's home.</p>
           </div>
         </div>
-      </section >
+      </section>
       <section className={styles.promotion} id="topProducts">
         <h2>Our Top 3 Helping Products</h2>
         <div className={styles.stage}>
@@ -190,91 +185,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.products} id="products">
-        <h2>Products</h2>
-        <Swiper className={styles.stage}
-          modules={[Navigation, A11y, Autoplay]}
-          slidesPerView={4}
-          navigation
-          autoplay
-          loop
-        >
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={Wheelchairs} alt="" />
-              <h3>Wheelchairs</h3>
-              <p>Discover our range of comfortable and durable wheelchairs, designed for ease of use and
-                enhanced
-                mobility. Choose the perfect model to fit your lifestyle and needs.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={CgmMonitors} alt="" />
-              <h3>CGM Monitors</h3>
-              <p>Stay on top of your health with our continuous glucose monitors, providing real-time
-                blood
-                sugar
-                data for optimal diabetes management. Easy to use and highly accurate.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={UvbLightWands} alt="" />
-              <h3>UVB Light Wands</h3>
-              <p>Effectively treat skin conditions with our UVB light wands, offering targeted therapy
-                with
-                powerful results. Safe, portable, and easy to operate at home.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={KneeBraces} alt="" />
-              <h3>Knee Braces</h3>
-              <p>Support and stabilize your joints with our high-quality braces, designed for maximum
-                comfort
-                and
-                effectiveness. Ideal for injury recovery and daily use.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={HipBraces} alt="" />
-              <h3>Hip Braces</h3>
-              <p>Support and stabilize your joints with our high-quality braces, designed for maximum
-                comfort
-                and
-                effectiveness. Ideal for injury recovery and daily use.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={TenseUnit} alt="" />
-              <h3>Tense Unit</h3>
-              <p>Relieve pain naturally with our TENS units, delivering targeted electrical stimulation to
-                soothe
-                muscle aches and tension. Compact, portable, and easy to use.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={BraceSleves} alt="" />
-              <h3>Brace Sleeves</h3>
-              <p>Keep your braces comfortable and secure with our premium brace sleeves, designed to
-                prevent
-                irritation and improve wearability. Soft, breathable, and easy to clean.</p>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide className={styles.item}>
-            <a href="#contactUs">
-              <Image src={LymphedemaPumpMassagers} alt="" />
-              <h3>Lymphedema Pump Massagers</h3>
-              <p>Improve circulation and reduce swelling with our lymphedema pump massagers, designed for
-                effective compression therapy. Comfortable, customizable, and easy to use at home.</p>
-            </a>
-          </SwiperSlide>
-        </Swiper>
-      </section >
+      <ProductSlider heading="Products" />
       <section className={styles.stats}>
         <span>At Squad Medical Supplies</span>
         <h2>Our Stats</h2>
