@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export default function ImportantAlert() {
-    const [display, setDisplayOption] = useState(true);
+    const [display, setDisplayOption] = useState<boolean>(true);
     return (
         <>
             {
@@ -9,7 +9,7 @@ export default function ImportantAlert() {
                 <div className="importantInfo">
                     <p>Important Information in regard of COVID19</p>
                     <div className="infoButtons">
-                        <button onClick={() => setDisplayOption(!display)}>Close</button>
+                        <button onClick={() => setDisplayOption(false)}>Close</button>
                         <button>Read</button>
                     </div>
                 </div>
