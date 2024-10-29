@@ -1,12 +1,12 @@
 "use client"
 import { useState } from "react";
-import styles from "@/assets/css/Products.module.css"
 import Image from "next/image"
 
 import ProductSlider from "@/components/ProductSlider";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import styles from "@/assets/css/Products.module.css"
 
 import HeroImage from "@/assets/images/doctor-group.png"
 import quotes from "@/assets/images/quotes.png"
@@ -118,7 +118,7 @@ export default function Products() {
                 </div>
                 <Image src={HeroImage} alt="group of doctors" />
             </section>
-            <form action="" className={styles.searchForm}>
+            <form action="" className={styles.searchForm} onSubmit={(e) => e.preventDefault}>
                 <input
                     type="search"
                     name="productSearch"
