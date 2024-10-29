@@ -109,7 +109,7 @@ export default function Home() {
       </section>
       <section className={styles.whatWeDo}>
         <div className={styles.head}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "5px", width: "30%" }}>
+          <div className={styles.headings}>
             <span>Squad Medical Supplies</span>
             <h2>What We Do</h2>
           </div>
