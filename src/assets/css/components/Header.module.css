@@ -74,3 +74,69 @@
     border: 2px solid var(--yellow);
     color: white;
 }
+
+@media (max-width: 640px) {
+    .contact {
+        grid-template-columns: 1fr;
+        /* Stack contact elements vertically */
+        text-align: center;
+        /* Center align text */
+        padding: 20px 10px;
+        /* Increase padding */
+    }
+
+    .contact>p {
+        justify-self: center;
+        /* Center align text in smaller screens */
+        margin-top: 10px;
+        /* Add spacing between elements */
+    }
+
+    .socials {
+        width: 100%;
+        /* Make socials take full width */
+        justify-content: center;
+        /* Center align icons */
+        gap: 10px;
+        /* Increase gap for better spacing */
+    }
+
+    .header {
+        flex-direction: column;
+        /* Stack header elements vertically */
+        height: auto;
+        /* Adjust height to content */
+        padding: 10px 0;
+        /* Adjust padding */
+    }
+
+    .header .logo {
+        width: 80%;
+        /* Increase logo size */
+        height: auto;
+        /* Adjust logo height */
+        margin-bottom: 10px;
+        /* Add space below logo */
+    }
+
+    .header nav {
+        width: 100%;
+        /* Make nav take full width */
+        justify-content: center;
+        /* Center align navigation */
+    }
+
+    .header nav ul {
+        gap: 10px;
+        /* Reduce gap for compact layout */
+        margin-right: 0;
+        /* Remove extra margin */
+        flex-wrap: wrap;
+        /* Wrap items to fit smaller screens */
+    }
+
+    .header .headerBtn {
+        padding: 8px 15px;
+        /* Adjust padding for smaller screens */
+    }
+}
