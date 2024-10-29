@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react";
 import styles from "@/assets/css/Products.module.css"
 import Image from "next/image"
 
@@ -8,8 +10,105 @@ import "swiper/css/navigation";
 
 import HeroImage from "@/assets/images/doctor-group.png"
 import quotes from "@/assets/images/quotes.png"
+import Link from "next/link";
 
 export default function Products() {
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const products = [
+        {
+            "id": "1",
+            "image": "https://placehold.co/170",
+            "name": "Surgical Mask",
+            "description": "A disposable mask providing respiratory protection against airborne particles and contaminants in medical environments.",
+            "tags": "protective, disposable, face mask"
+        },
+        {
+            "id": "2",
+            "image": "https://placehold.co/170",
+            "name": "Nitrile Gloves",
+            "description": "Durable, disposable gloves ideal for handling chemicals, bodily fluids, and maintaining hygiene standards.",
+            "tags": "gloves, protective, disposable"
+        },
+        {
+            "id": "3",
+            "image": "https://placehold.co/170",
+            "name": "Digital Thermometer",
+            "description": "Accurate, easy-to-use thermometer for quick temperature readings in clinical and home settings.",
+            "tags": "temperature, digital, diagnostic"
+        },
+        {
+            "id": "4",
+            "image": "https://placehold.co/170",
+            "name": "Stethoscope",
+            "description": "A reliable diagnostic tool for listening to internal sounds, including heartbeats and respiratory activity.",
+            "tags": "diagnostic, auscultation, reusable"
+        },
+        {
+            "id": "5",
+            "image": "https://placehold.co/170",
+            "name": "Hand Sanitizer",
+            "description": "Effective hand sanitizing gel to reduce pathogens, ensuring hand hygiene in clinical environments.",
+            "tags": "disinfectant, gel, hygiene"
+        },
+        {
+            "id": "6",
+            "image": "https://placehold.co/170",
+            "name": "Face Shield",
+            "description": "Reusable protective face shield offering splash resistance and clear visibility for healthcare workers.",
+            "tags": "protective, transparent, reusable"
+        },
+        {
+            "id": "7",
+            "image": "https://placehold.co/170",
+            "name": "Blood Pressure Monitor",
+            "description": "Electronic monitor with an arm cuff for accurate blood pressure readings in home or hospital settings.",
+            "tags": "diagnostic, electronic, arm cuff"
+        },
+        {
+            "id": "8",
+            "image": "https://placehold.co/170",
+            "name": "First Aid Kit",
+            "description": "Portable kit with essential emergency supplies for immediate medical attention in various situations.",
+            "tags": "emergency, supplies, portable"
+        },
+        {
+            "id": "9",
+            "image": "https://placehold.co/170",
+            "name": "Pulse Oximeter",
+            "description": "Finger clip device to measure oxygen saturation levels and pulse rate with high accuracy.",
+            "tags": "monitoring, oxygen, finger clip"
+        },
+        {
+            "id": "10",
+            "image": "https://placehold.co/170",
+            "name": "Nebulizer",
+            "description": "Efficient device for respiratory therapy, delivering medication directly to the lungs through a mist.",
+            "tags": "respiratory, therapy, medication delivery"
+        },
+        {
+            "id": "11",
+            "image": "https://placehold.co/170",
+            "name": "IV Drip Stand",
+            "description": "Adjustable support stand for intravenous fluids, designed to be stable and portable.",
+            "tags": "support, adjustable, intravenous"
+        },
+        {
+            "id": "12",
+            "image": "https://placehold.co/170",
+            "name": "Sterile Gauze Pads",
+            "description": "Absorbent, sterile gauze for wound care, minimizing infection risk while dressing wounds.",
+            "tags": "wound care, absorbent, sterile"
+        }
+    ]
+
+    const filteredProducts = products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.tags.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    const uniqueTags = Array.from(new Set(products.flatMap(product => product.tags.split(",").map(tag => tag.trim()))));
+
     return (
         <main>
             <section className={styles.hero}>
@@ -20,13 +119,21 @@ export default function Products() {
                 <Image src={HeroImage} alt="group of doctors" />
             </section>
             <form action="" className={styles.searchForm}>
-                <input type="search" name="productSearch" id="productSearch" />
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
-                        <path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-                        <path d="M232 160a72 72 0 1072 72 72 72 0 00-72-72z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M283.64 283.64L336 336" />
-                    </svg>
+                <input
+                    type="search"
+                    name="productSearch"
+                    id="productSearch"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                <button type="button">
+                    <Link href="#products">
+                        <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
+                            <path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                            <path d="M232 160a72 72 0 1072 72 72 72 0 00-72-72z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M283.64 283.64L336 336" />
+                        </svg>
+                    </Link>
                 </button>
             </form>
             <section className={styles.promotion}>
@@ -102,85 +209,29 @@ export default function Products() {
                 </div>
             </section>
             <section className={styles.products}>
-                <div className={styles.stage}>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src="https://placehold.co/170" alt="" width="170" height="170" />
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <span>mobility</span><span>mobility</span>
-                    </div>
+                <div className={styles.stage} id="products">
+                    {filteredProducts.map(product => (
+                        <div className={styles.item} key={product.id}>
+                            <Image src={product.image + "?text=" + product.name} alt="" width="170" height="170" />
+                            <h3>{product.name}</h3>
+                            <p>{product.description}</p>
+                            {product.tags.split(",").map(tag => (
+                                <span>{tag}</span>
+                            ))}
+                        </div>
+                    ))}
                 </div>
                 <div className={styles.filters}>
-                    <form action="" method="GET">
+                    <form action="" method="GET" onSubmit={(event) => event.preventDefault}>
                         <h2>Search:</h2>
                         <div className={styles.search}>
-                            <input type="search" name="fitlerSearch" id="filterSearch" />
+                            <input
+                                type="search"
+                                name="fitlerSearch"
+                                id="filterSearch"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
                             <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                     <path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
@@ -191,11 +242,11 @@ export default function Products() {
                         </div>
                         <h2>Tags:</h2>
                         <div className={styles.tags}>
-                            <button>mobility</button>
-                            <button>mobility</button>
-                            <button>mobility</button>
-                            <button>mobility</button>
-                            <button>mobility</button>
+                            {
+                                uniqueTags.map(tag => (
+                                    <button onClick={() => setSearchTerm(tag)} type="button">{tag}</button>
+                                ))
+                            }
                         </div>
                     </form>
                 </div>

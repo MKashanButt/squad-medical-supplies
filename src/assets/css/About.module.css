@@ -31,6 +31,33 @@
     margin-bottom: 10px;
 }
 
+.missionVision {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+}
+
+.missionVision h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.missionVision>p {
+    margin-bottom: 10px;
+}
+
+.missionVision .stage {
+    display: flex;
+    margin-top: 20px;
+}
+
+.missionVision .stage .item .icon {
+    width: 40px;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+
 .about {
     width: 80%;
     margin: 50px auto;
@@ -89,4 +116,31 @@
     background-color: var(--blue);
     position: absolute;
     z-index: 50;
+}
+
+.insurances {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.insurances h2 {
+    font-size: 40px;
+}
+
+.insurances .stage {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.insurances .stage img {
+    width: 200px;
+    height: 80px;
 }

@@ -1,11 +1,15 @@
 'use client'
-import { closeDialog } from "@/utils/DialogHelper";
 
-export default function PopupForm() {
+type PopupDialogProps = {
+    id: string;
+    onClose: () => void;
+}
+
+export default function PopupForm({ id, onClose }: PopupDialogProps) {
     return (
-        <div className="braceDialog" id="braces">
+        <div className="braceDialog" id={id}>
             <div className="content">
-                <button className="close" onClick={() => closeDialog('braces')}>X</button>
+                <button className="close" onClick={onClose}>X</button>
                 <form action="/form.php" method="post" id="contactUs">
                     <h2>Get your diabetic supplies at little or no cost</h2>
                     <p>Enter your information below in this quick profile to check your eligibility.</p>

@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { toggleDialog } from "@/utils/DialogHelper";
+import { closeDialog, toggleDialog } from "@/utils/DialogHelper";
 import { counter } from "@/utils/CounterHelper";
 import ProductSlider from "@/components/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,6 +23,7 @@ import aetna from "@/assets/images/aetna-insurance.png"
 import humana from "@/assets/images/humana-insurance.jpg"
 import molina from "@/assets/images/molina-insurance.png"
 import wellcare from "@/assets/images/wellcare-insurance.png"
+import PopupForm from "@/components/PopupForm";
 
 export default function Home() {
   const navigationNextRef = useRef(null);
@@ -166,20 +167,20 @@ export default function Home() {
         <h2>Our Top 3 Helping Products</h2>
         <div className={styles.stage}>
           <div className={styles.item} id="dialogBraces">
-            <Image src={KneeBraces} alt="" />
+            <Image src={KneeBraces} alt="knee-braces" />
             <div className={styles.overlay}></div>
             <h3>Struggling with Joint Pain? Find Relief with Our Orthopedic Braces!</h3>
             <button onClick={() => toggleDialog('braces')}>Get Your Product Now</button>
           </div>
           <div className={styles.item}>
             <div className={styles.overlay}></div>
-            <Image src={CgmMonitors} alt="" />
+            <Image src={CgmMonitors} alt="cgm-monitors" />
             <h3>Fed Up with Finger Pricks? Discover Easy Glucose Monitoring!</h3>
             <button onClick={() => toggleDialog('braces')}>Get Your Product Now</button>
           </div>
           <div className={styles.item}>
             <div className={styles.overlay}></div>
-            <Image src={LymphedemaPumpMassagers} alt="" />
+            <Image src={LymphedemaPumpMassagers} alt="lymphedema-pump-massagers" />
             <h3>Battling Swollen Muscles? Try Our Lymphedema Pump Massagers!</h3>
             <button onClick={() => toggleDialog('braces')}>Get Your Product Now</button>
           </div>
@@ -273,6 +274,7 @@ export default function Home() {
           <button className="primary">+1 (404) 442-2019</button>
         </div>
       </section>
+      <PopupForm id="braces" onClose={() => closeDialog("braces")} />
     </main >
   );
 }
