@@ -23,7 +23,19 @@ export default function ProductSlider({ heading }: { heading: string }) {
             <h2>{heading}</h2>
             <Swiper className={styles.stage}
                 modules={[Navigation, A11y, Autoplay]}
-                slidesPerView={4}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
                 navigation
                 autoplay
                 loop
