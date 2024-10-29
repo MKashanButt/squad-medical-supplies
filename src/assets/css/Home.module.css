@@ -101,6 +101,13 @@
     align-items: center;
 }
 
+.whatWeDo .head .headings {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .whatWeDo .head h2 {
     font-size: 40px;
     text-transform: uppercase;
@@ -371,4 +378,143 @@
 
 .cta .container button {
     justify-self: end;
+}
+
+@media (max-width: 640px) {
+    .hero {
+        height: 80vh;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero .stage {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .content button {
+        width: 80%;
+    }
+
+    .hero .overlaySlider .slide .content h1 {
+        font-size: 40px;
+    }
+
+    .whatWeDo {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .whatWeDo .head {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whatWeDo .head .headings {
+        width: 100%;
+        text-align: center;
+    }
+
+    .whatWeDo .head h2 {
+        font-size: 30px;
+    }
+
+    .whatWeDo .head .content {
+        border-left: 0;
+        border-top: 1px solid;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .whatWeDo .head .content button {
+        width: 100%;
+    }
+
+    .whatWeDo .stage {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .whatWeDo .stage .item {
+        width: 100%;
+    }
+
+    .promotion h2 {
+        text-align: center;
+    }
+
+    .promotion .stage {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .promotion .stage .item {
+        width: 90%;
+        margin: auto;
+    }
+
+    .stats {
+        padding: 50px 0;
+        gap: 20px;
+    }
+
+    .stats h2 {
+        font-size: 30px;
+    }
+
+    .stats .stage {
+        flex-direction: column;
+    }
+
+    .stats .stage .item {
+        width: 100%;
+    }
+
+    .aboutUs {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutUs .image {
+        width: 80%;
+    }
+
+    .aboutUs .content {
+        width: 100%;
+    }
+
+    .insurances {
+        text-align: center;
+    }
+
+    .insurances .stage {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .insurances .stage img {
+        width: 150px;
+        height: 60px;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+
+    .cta .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cta .container .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta .container button {
+        width: 100%;
+        justify-self: center;
+    }
 }
