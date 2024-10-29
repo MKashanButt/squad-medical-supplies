@@ -19,7 +19,7 @@ import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.j
 
 export default function ProductSlider({ heading }: { heading: string }) {
     return (
-        <section className={styles.products} id="products">
+        <section className={styles.products}>
             <h2>{heading}</h2>
             <Swiper className={styles.stage}
                 modules={[Navigation, A11y, Autoplay]}
