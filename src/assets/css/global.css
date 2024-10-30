@@ -266,3 +266,100 @@ html {
 .customNavigation button .icon {
   width: 80px;
 }
+
+@media (max-width: 640px) {
+
+  .importantInfo {
+    font-size: 12px;
+    padding: 8px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .infoButtons {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .importantInfo button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .braceDialog .content {
+    width: 90%;
+    margin: 0 10px;
+  }
+
+  .braceDialog form {
+    margin: 0;
+    padding: 0;
+  }
+
+  .braceDialog form .field {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .braceDialog form .field label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .braceDialog form .field input,
+  .braceDialog form .field select,
+  .braceDialog form .field textarea {
+    width: 100%;
+  }
+
+  .braceDialog form button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .braceDialog .content button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .braceDialog .consentField p {
+    font-size: 10px;
+    margin-top: -15px;
+    margin-left: 12px;
+  }
+
+  .braceDialog .consentField #consent {
+    margin-left: -5px;
+    display: inline-flex;
+    margin-left: -14px;
+  }
+
+  .braceDialog button {
+    padding: 10px;
+  }
+
+  .close {
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    right: 5px;
+    font-size: 12px;
+  }
+
+  .primary {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .customNavigation button {
+    width: 40px;
+    padding: 4px;
+  }
+
+  .customNavigation button .icon {
+    width: 50px;
+  }
+}
