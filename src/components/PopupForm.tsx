@@ -66,7 +66,7 @@ export default function PopupForm({ id, onClose }: PopupDialogProps) {
                             <input type="text" name="bestTimeToContact" id="bestTimeToContact" />
                         </div>
                     </div>
-                    <div className="field" style={{ alignItems: 'baseline' }}>
+                    <div className="field consentField" style={{ alignItems: 'baseline' }}>
                         <input type="checkbox" name="consent" id="consent" />
                         <p>
                             By tapping the &quot;Submit&quot; button, I expressly endorse healthmed and Backpain Discount
