@@ -210,13 +210,13 @@ export default function Products() {
             </section>
             <section className={styles.products}>
                 <div className={styles.stage} id="products">
-                    {filteredProducts.map(product => (
+                    {filteredProducts.map((product) => (
                         <div className={styles.item} key={product.id}>
                             <Image src={product.image + "?text=" + product.name} alt="" width="170" height="170" />
                             <h3>{product.name}</h3>
                             <p>{product.description}</p>
                             {product.tags.split(",").map((tag, index) => (
-                                <span key={`${product.id}-${index}`}>{tag}</span>
+                                <span key={index}>{tag}</span>
                             ))}
                         </div>
                     ))}
@@ -242,11 +242,11 @@ export default function Products() {
                         </div>
                         <h2>Tags:</h2>
                         <div className={styles.tags}>
-                            {
-                                uniqueTags.map(tag => (
-                                    <button onClick={() => setSearchTerm(tag)} type="button">{tag}</button>
-                                ))
-                            }
+                            {uniqueTags.map((tag, index) => (
+                                <button key={index} onClick={() => setSearchTerm(tag)} type="button">
+                                    {tag}
+                                </button>
+                            ))}
                         </div>
                     </form>
                 </div>
