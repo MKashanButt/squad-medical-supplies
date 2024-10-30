@@ -63,7 +63,7 @@ export default function Home() {
           }}
           loop
         >
-          <SwiperSlide className={styles.slide} style={{ justifyContent: 'center' }}>
+          <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
             <div className={styles.overlay}></div>
             <Image src={HeroSlideOne} alt="" className={styles.image} />
             <div className={styles.content} style={{
@@ -84,7 +84,7 @@ export default function Home() {
               <button className="primary">Contact Us</button>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles.slide} style={{ justifyContent: 'end' }}>
+          <SwiperSlide className={`${styles.slide} ${styles.slideLast}`}>
             <div className={styles.overlay}></div>
             <Image src={HeroSlideThree} alt="" className={styles.image} />
             <div className={styles.content}>
