@@ -11,6 +11,17 @@ import styles from "@/assets/css/Products.module.css"
 import HeroImage from "@/assets/images/doctor-group.png"
 import quotes from "@/assets/images/quotes.png"
 import Link from "next/link";
+import { closeDialog, toggleDialog } from "@/utils/DialogHelper";
+import PopupForm from "@/components/PopupForm";
+
+import KneeBraces from "@/assets/images/knee-braces.jpg"
+import BraceSleves from "@/assets/images/brace-sleves.jpg"
+import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
+import Wheelchairs from "@/assets/images/wheelchairs.jpg"
+import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
+import HipBraces from "@/assets/images/hip-braces.jpg"
+import TenseUnit from "@/assets/images/tense-unit.jpg"
+import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 
 export default function Products() {
     const [searchTerm, setSearchTerm] = useState("");
@@ -18,89 +29,94 @@ export default function Products() {
     const products = [
         {
             "id": "1",
-            "image": "https://placehold.co/170",
-            "name": "Surgical Mask",
-            "description": "A disposable mask providing respiratory protection against airborne particles and contaminants in medical environments.",
-            "tags": "protective, disposable, face mask"
+            "image": KneeBraces,
+            "name": "Knee Braces",
+            "keyBenefits": [
+                "Provides support for injured or weak knees",
+                "Reduces knee strain during physical activities",
+                "Helps alleviate knee pain and inflammation"
+            ],
+            "tags": "support, knee, brace"
         },
         {
             "id": "2",
-            "image": "https://placehold.co/170",
-            "name": "Nitrile Gloves",
-            "description": "Durable, disposable gloves ideal for handling chemicals, bodily fluids, and maintaining hygiene standards.",
-            "tags": "gloves, protective, disposable"
+            "image": BraceSleves,
+            "name": "Brace Sleeves",
+            "keyBenefits": [
+                "Elastic sleeve for joint support",
+                "Improves circulation",
+                "Ideal for compression therapy"
+            ],
+            "tags": "compression, support, sleeve"
         },
         {
             "id": "3",
-            "image": "https://placehold.co/170",
-            "name": "Digital Thermometer",
-            "description": "Accurate, easy-to-use thermometer for quick temperature readings in clinical and home settings.",
-            "tags": "temperature, digital, diagnostic"
+            "image": CgmMonitors,
+            "name": "CGM Monitors",
+            "keyBenefits": [
+                "Continuous glucose monitoring",
+                "Tracks blood sugar levels in real-time",
+                "Sends alerts for high or low readings"
+            ],
+            "tags": "glucose, monitoring, health"
         },
         {
             "id": "4",
-            "image": "https://placehold.co/170",
-            "name": "Stethoscope",
-            "description": "A reliable diagnostic tool for listening to internal sounds, including heartbeats and respiratory activity.",
-            "tags": "diagnostic, auscultation, reusable"
+            "image": Wheelchairs,
+            "name": "Wheelchairs",
+            "keyBenefits": [
+                "Enables mobility for individuals with limited movement",
+                "Manual or powered options available",
+                "Designed for comfort and ease of use"
+            ],
+            "tags": "mobility, support, wheelchair"
         },
         {
             "id": "5",
-            "image": "https://placehold.co/170",
-            "name": "Hand Sanitizer",
-            "description": "Effective hand sanitizing gel to reduce pathogens, ensuring hand hygiene in clinical environments.",
-            "tags": "disinfectant, gel, hygiene"
+            "image": UvbLightWands,
+            "name": "UVB Light Wands",
+            "keyBenefits": [
+                "Portable UVB therapy for skin conditions",
+                "Effective for psoriasis treatment",
+                "Delivers controlled UVB exposure"
+            ],
+            "tags": "therapy, UVB, skin care"
         },
         {
             "id": "6",
-            "image": "https://placehold.co/170",
-            "name": "Face Shield",
-            "description": "Reusable protective face shield offering splash resistance and clear visibility for healthcare workers.",
-            "tags": "protective, transparent, reusable"
+            "image": HipBraces,
+            "name": "Hip Braces",
+            "keyBenefits": [
+                "Supports the hip joint",
+                "Ideal for post-surgery recovery",
+                "Reduces hip strain during movement"
+            ],
+            "tags": "support, hip, brace"
         },
         {
             "id": "7",
-            "image": "https://placehold.co/170",
-            "name": "Blood Pressure Monitor",
-            "description": "Electronic monitor with an arm cuff for accurate blood pressure readings in home or hospital settings.",
-            "tags": "diagnostic, electronic, arm cuff"
+            "image": TenseUnit,
+            "name": "TENS Unit",
+            "keyBenefits": [
+                "Transcutaneous Electrical Nerve Stimulation device",
+                "Helps relieve pain through electric pulses",
+                "Portable and easy to use"
+            ],
+            "tags": "pain relief, TENS, therapy"
         },
         {
             "id": "8",
-            "image": "https://placehold.co/170",
-            "name": "First Aid Kit",
-            "description": "Portable kit with essential emergency supplies for immediate medical attention in various situations.",
-            "tags": "emergency, supplies, portable"
-        },
-        {
-            "id": "9",
-            "image": "https://placehold.co/170",
-            "name": "Pulse Oximeter",
-            "description": "Finger clip device to measure oxygen saturation levels and pulse rate with high accuracy.",
-            "tags": "monitoring, oxygen, finger clip"
-        },
-        {
-            "id": "10",
-            "image": "https://placehold.co/170",
-            "name": "Nebulizer",
-            "description": "Efficient device for respiratory therapy, delivering medication directly to the lungs through a mist.",
-            "tags": "respiratory, therapy, medication delivery"
-        },
-        {
-            "id": "11",
-            "image": "https://placehold.co/170",
-            "name": "IV Drip Stand",
-            "description": "Adjustable support stand for intravenous fluids, designed to be stable and portable.",
-            "tags": "support, adjustable, intravenous"
-        },
-        {
-            "id": "12",
-            "image": "https://placehold.co/170",
-            "name": "Sterile Gauze Pads",
-            "description": "Absorbent, sterile gauze for wound care, minimizing infection risk while dressing wounds.",
-            "tags": "wound care, absorbent, sterile"
+            "image": LymphedemaPumpMassagers,
+            "name": "Lymphedema Pump Massagers",
+            "keyBenefits": [
+                "Promotes lymphatic drainage",
+                "Reduces swelling and improves circulation",
+                "Adjustable pressure levels"
+            ],
+            "tags": "therapy, lymphedema, massage"
         }
-    ]
+    ];
+
 
     const filteredProducts = products.filter(product =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -212,12 +228,15 @@ export default function Products() {
                 <div className={styles.stage} id="products">
                     {filteredProducts.map((product) => (
                         <div className={styles.item} key={product.id}>
-                            <Image src={product.image + "?text=" + product.name} alt="" width="170" height="170" />
+                            <Image src={product.image} alt="" />
                             <h3>{product.name}</h3>
-                            <p>{product.description}</p>
-                            {product.tags.split(",").map((tag, index) => (
-                                <span key={index}>{tag}</span>
-                            ))}
+                            <h4>Key Benefits:</h4>
+                            <ul>
+                                {product.keyBenefits.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                            <button onClick={() => toggleDialog('braces')}>Order</button>
                         </div>
                     ))}
                 </div>
@@ -280,6 +299,7 @@ export default function Products() {
                     </div>
                 </div>
             </section>
+            <PopupForm id="braces" onClose={() => closeDialog('braces')} />
         </main>
     )
 }
