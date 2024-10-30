@@ -159,28 +159,36 @@
 .products .stage .item {
     width: calc(100% * (1/4) - 20px);
     padding: 10px;
-    text-align: center;
+    display: grid;
 }
 
 .products .stage .item img {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin-bottom: 10px;
 }
 
-.products .stage .item p {
-    width: 90%;
-    font-size: 14px;
-    margin: auto;
+.products .stage .item h3 {
+    margin-bottom: 5px;
 }
 
-.products .stage .item span {
+.products .stage .item h4 {
     font-size: 12px;
-    background-color: var(--yellow);
-    color: white;
-    margin: 10px 5px 0 0;
+}
+
+.products .stage .item li {
+    width: 90%;
+    list-style: circle;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.products .stage .item button {
+    align-self: end;
     padding: 5px;
-    border-radius: 25px;
-    display: inline-flex;
+    margin-top: 10px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: white;
+    cursor: pointer;
 }
 
 .filters {
