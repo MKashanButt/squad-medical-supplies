@@ -215,8 +215,8 @@ export default function Products() {
                             <Image src={product.image + "?text=" + product.name} alt="" width="170" height="170" />
                             <h3>{product.name}</h3>
                             <p>{product.description}</p>
-                            {product.tags.split(",").map(tag => (
-                                <span>{tag}</span>
+                            {product.tags.split(",").map((tag, index) => (
+                                <span key={`${product.id}-${index}`}>{tag}</span>
                             ))}
                         </div>
                     ))}
