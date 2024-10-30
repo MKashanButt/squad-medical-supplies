@@ -144,3 +144,102 @@
     width: 200px;
     height: 80px;
 }
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero .content {
+        width: 100%;
+    }
+
+    .hero .content h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .missionVision {
+        padding: 60px 20px;
+    }
+
+    .missionVision h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .missionVision>p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .missionVision .stage {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .missionVision .stage .item .icon {
+        width: 30px;
+        padding: 8px;
+    }
+
+    .about {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .about .content {
+        width: 100%;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .about .content h2 {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .about .content p {
+        width: 100%;
+    }
+
+    .about .content ul li {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    .about .image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .image .shape {
+        width: 40%;
+        height: 100%;
+    }
+
+    .insurances {
+        padding: 60px 20px;
+    }
+
+    .insurances h2 {
+        font-size: 30px;
+    }
+
+    .insurances .stage {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .insurances .stage img {
+        width: 150px;
+        height: auto;
+    }
+}
