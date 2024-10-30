@@ -61,15 +61,6 @@ export default function ProductSlider({ heading }: { heading: string }) {
                 </SwiperSlide>
                 <SwiperSlide className={styles.item}>
                     <a href="#contactUs">
-                        <Image src={UvbLightWands} alt="" />
-                        <h3>UVB Light Wands</h3>
-                        <p>Effectively treat skin conditions with our UVB light wands, offering targeted therapy
-                            with
-                            powerful results. Safe, portable, and easy to operate at home.</p>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide className={styles.item}>
-                    <a href="#contactUs">
                         <Image src={KneeBraces} alt="" />
                         <h3>Knee Braces</h3>
                         <p>Support and stabilize your joints with our high-quality braces, designed for maximum
@@ -86,32 +77,6 @@ export default function ProductSlider({ heading }: { heading: string }) {
                             comfort
                             and
                             effectiveness. Ideal for injury recovery and daily use.</p>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide className={styles.item}>
-                    <a href="#contactUs">
-                        <Image src={TenseUnit} alt="" />
-                        <h3>Tense Unit</h3>
-                        <p>Relieve pain naturally with our TENS units, delivering targeted electrical stimulation to
-                            soothe
-                            muscle aches and tension. Compact, portable, and easy to use.</p>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide className={styles.item}>
-                    <a href="#contactUs">
-                        <Image src={BraceSleves} alt="" />
-                        <h3>Brace Sleeves</h3>
-                        <p>Keep your braces comfortable and secure with our premium brace sleeves, designed to
-                            prevent
-                            irritation and improve wearability. Soft, breathable, and easy to clean.</p>
-                    </a>
-                </SwiperSlide>
-                <SwiperSlide className={styles.item}>
-                    <a href="#contactUs">
-                        <Image src={LymphedemaPumpMassagers} alt="" />
-                        <h3>Lymphedema Pump Massagers</h3>
-                        <p>Improve circulation and reduce swelling with our lymphedema pump massagers, designed for
-                            effective compression therapy. Comfortable, customizable, and easy to use at home.</p>
                     </a>
                 </SwiperSlide>
             </Swiper>
