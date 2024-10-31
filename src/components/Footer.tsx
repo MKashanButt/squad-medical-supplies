@@ -43,12 +43,9 @@ export default function Footer() {
                     <nav>
                         <h2>Services</h2>
                         <ul>
-                            <li><Link href='#'>Service #1</Link></li>
-                            <li><Link href='#'>Service #2</Link></li>
-                            <li><Link href='#'>Service #3</Link></li>
-                            <li><Link href='#'>Service #4</Link></li>
-                            <li><Link href='#'>Service #5</Link></li>
-                            <li><Link href='#'>Service #6</Link></li>
+                            <li><Link href='/dme-equipments'>DME Equipments</Link></li>
+                            <li><Link href='/health-plans'>Healthplans</Link></li>
+                            <li><Link href='/caregivers'>Caregivers</Link></li>
                         </ul>
                     </nav>
                     <nav>
