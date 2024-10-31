@@ -45,16 +45,22 @@
     align-items: center;
 }
 
-.header nav ul {
+.header nav>ul {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-right: 20px;
 }
 
-.header nav ul li {
+.header nav>ul>li {
     padding: 10px;
     font-size: 14px;
+    position: relative;
+}
+
+.header nav>ul>li span {
+    user-select: none;
+    cursor: pointer;
 }
 
 .header .headerBtn {
@@ -73,6 +79,30 @@
     background-color: var(--yellow);
     border: 2px solid var(--yellow);
     color: white;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    margin-top: 10px;
+}
+
+.dropdown ul {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid;
+}
+
+.dropdown ul li {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.dropdown .lastItem {
+    border-bottom: 0;
 }
 
 @media (max-width: 640px) {

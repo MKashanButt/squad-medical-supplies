@@ -6,9 +6,11 @@ import styles from "@/assets/css/components/Header.module.css"
 import Logo from "@/assets/images/logo.png"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 
 export default function Header() {
     const pathname = usePathname()
+    const [toggleDropdown, setToggleDropdown] = useState<boolean>(false);
     return (
         <>
             <ImportantAlert />
@@ -36,7 +38,16 @@ export default function Header() {
                             <Link href="/products">Products</Link>
                         </li>
                         <li className={pathname == '/services' ? 'active-link' : ''}>
-                            <Link href="/services">Services</Link>
+                            <span onClick={() => setToggleDropdown(!toggleDropdown)}>Services</span>
+                            {toggleDropdown &&
+                                <div className={styles.dropdown}>
+                                    <ul>
+                                        <Link href="/dme-equipments"><li>DME Equipments</li></Link>
+                                        <Link href="health-plans"><li>Health Plans</li></Link>
+                                        <Link href="caregivers"><li className={styles.lastItem}>Caregivers</li></Link>
+                                    </ul>
+                                </div>
+                            }
                         </li>
                         <li className={pathname == '/about' ? 'active-link' : ''}>
                             <Link href="/about">About</Link>
