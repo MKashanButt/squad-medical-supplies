@@ -11,9 +11,9 @@ import styles from "@/assets/css/Home.module.css"
 import "swiper/css";
 import "swiper/css/navigation";
 
-import HeroSlideOne from "@/assets/images/hero-slider-three.png"
-import HeroSlideTwo from "@/assets/images/hero-slider-one.jpg"
-import HeroSlideThree from "@/assets/images/hero-slider-two.jpg"
+import HeroSlideOne from "@/assets/images/hero-slider-one.png"
+import HeroSlideTwo from "@/assets/images/hero-slider-three.png"
+import HeroSlideThree from "@/assets/images/hero-slider-two.png"
 
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
@@ -64,34 +64,34 @@ export default function Home() {
           loop
         >
           <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideOne} alt="" className={styles.image} />
-            <div className={styles.content} style={{
+            {/* <div className={styles.content} style={{
               width: '80%',
               textAlign: 'center'
             }}>
               <h1 className={styles.heading}>Squad Medical Supplies</h1>
               <p>Durable equipment and disposable medical supplies delivered to your home. </p>
               <button className="primary" style={{ margin: 'auto' }}>Contact Us</button>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideTwo} alt="" className={styles.image} />
-            <div className={styles.content}>
+            {/* <div className={styles.content}>
               <h1 className={styles.heading}>Expanding Our Presence</h1>
               <p>Shipping to: Florida, New jersey, Texas, North & South Carolina</p>
               <button className="primary">Contact Us</button>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide className={`${styles.slide} ${styles.slideLast}`}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideThree} alt="" className={styles.image} />
-            <div className={styles.content}>
+            {/* <div className={styles.content}>
               <h1 className={styles.heading}>APD provider</h1>
               <p>Caring for children. We are a provider for Agency for Persons with Disabilities (APD) Learn how to apply here so you can spend less time worrying about their medical supplies</p>
               <button className="primary">Learn More</button>
-            </div>
+            </div> */}
           </SwiperSlide>
           <div className="customNavigation">
             <button ref={navigationPrevRef}>
