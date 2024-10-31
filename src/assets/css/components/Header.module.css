@@ -31,6 +31,8 @@
     align-items: center;
     top: 0;
     z-index: 100;
+    position: sticky;
+    background-color: white;
 }
 
 .header .logo {
