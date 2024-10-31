@@ -64,34 +64,13 @@ export default function Home() {
           loop
         >
           <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
-            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideOne} alt="" className={styles.image} />
-            {/* <div className={styles.content} style={{
-              width: '80%',
-              textAlign: 'center'
-            }}>
-              <h1 className={styles.heading}>Squad Medical Supplies</h1>
-              <p>Durable equipment and disposable medical supplies delivered to your home. </p>
-              <button className="primary" style={{ margin: 'auto' }}>Contact Us</button>
-            </div> */}
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
-            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideTwo} alt="" className={styles.image} />
-            {/* <div className={styles.content}>
-              <h1 className={styles.heading}>Expanding Our Presence</h1>
-              <p>Shipping to: Florida, New jersey, Texas, North & South Carolina</p>
-              <button className="primary">Contact Us</button>
-            </div> */}
           </SwiperSlide>
           <SwiperSlide className={`${styles.slide} ${styles.slideLast}`}>
-            {/* <div className={styles.overlay}></div> */}
             <Image src={HeroSlideThree} alt="" className={styles.image} />
-            {/* <div className={styles.content}>
-              <h1 className={styles.heading}>APD provider</h1>
-              <p>Caring for children. We are a provider for Agency for Persons with Disabilities (APD) Learn how to apply here so you can spend less time worrying about their medical supplies</p>
-              <button className="primary">Learn More</button>
-            </div> */}
           </SwiperSlide>
           <div className="customNavigation">
             <button ref={navigationPrevRef}>
@@ -251,7 +230,7 @@ export default function Home() {
             health,
             guiding you towards a more comfortable and healthier life.</p>
 
-          <a href=""><button>Contact Us at +1 (954) 417 7926</button></a>
+          <a href=""><button>Contact Us at +1 (404) 442-2019</button></a>
         </div>
       </section>
       <section className={styles.insurances}>
