@@ -57,7 +57,9 @@ export default function ProductSlider({ heading, data }: SliderProps) {
                 {data.map((item) => (
                     <SwiperSlide key={item.id} className={styles.item}>
                         <a href={item.link}>
-                            <Image src={item.image} alt={item.title} />
+                            <div className={styles.image}>
+                                <Image src={item.image} alt={item.title} />
+                            </div>
                             <h3>{item.title}</h3>
                             <p>{item.description}</p>
                         </a>
