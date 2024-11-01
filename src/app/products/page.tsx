@@ -23,7 +23,46 @@ import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 
+interface Product {
+    id: number,
+    image: any,
+    title: string,
+    description: string,
+    link: string
+}
+
 export default function Products() {
+    const data: Product[] = [
+        {
+            id: 1,
+            image: Wheelchairs,
+            title: "Wheelchairs",
+            description: "Discover our range of comfortable and durable wheelchairs, designed for ease of use and enhanced mobility. Choose the perfect model to fit your lifestyle and needs.",
+            link: "#contactUs"
+        },
+        {
+            id: 2,
+            image: CgmMonitors,
+            title: "CGM Monitors",
+            description: "Stay on top of your health with our continuous glucose monitors, providing real-time blood sugar data for optimal diabetes management. Easy to use and highly accurate.",
+            link: "#contactUs"
+        },
+        {
+            id: 3,
+            image: KneeBraces,
+            title: "Knee Braces",
+            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+            link: "#contactUs"
+        },
+        {
+            id: 4,
+            image: HipBraces,
+            title: "Hip Braces",
+            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+            link: "#contactUs"
+        }
+    ];
+
     const [searchTerm, setSearchTerm] = useState("");
 
     const products = [
@@ -178,7 +217,7 @@ export default function Products() {
                     </div>
                 </div>
             </section>
-            <ProductSlider heading="Trending Products" />
+            <ProductSlider heading="Trending Products" data={data} />
             <section className={styles.info}>
                 <div className={styles.item}>
                     <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
