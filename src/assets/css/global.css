@@ -247,6 +247,13 @@ html {
   width: 80px;
 }
 
+@media (min-width:1300px) {
+  main {
+    width: 90%;
+    margin: auto;
+  }
+}
+
 @media (max-width: 640px) {
 
   .importantInfo {
