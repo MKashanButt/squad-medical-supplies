@@ -9,7 +9,51 @@ import humanaIsurance from "@/assets/images/humana-insurance.jpg"
 import molinaIsurance from "@/assets/images/molina-insurance.png"
 import wellcareIsurance from "@/assets/images/wellcare-insurance.png"
 
+import KneeBraces from "@/assets/images/knee-braces.jpg"
+import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
+import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
+import Wheelchairs from "@/assets/images/wheelchairs.jpg"
+import HipBraces from "@/assets/images/hip-braces.jpg"
+
+interface Product {
+    id: number,
+    image: any,
+    title: string,
+    description: string,
+    link: string
+}
+
 export default function About() {
+    const data: Product[] = [
+        {
+            id: 1,
+            image: Wheelchairs,
+            title: "Wheelchairs",
+            description: "Discover our range of comfortable and durable wheelchairs, designed for ease of use and enhanced mobility. Choose the perfect model to fit your lifestyle and needs.",
+            link: "#contactUs"
+        },
+        {
+            id: 2,
+            image: CgmMonitors,
+            title: "CGM Monitors",
+            description: "Stay on top of your health with our continuous glucose monitors, providing real-time blood sugar data for optimal diabetes management. Easy to use and highly accurate.",
+            link: "#contactUs"
+        },
+        {
+            id: 3,
+            image: KneeBraces,
+            title: "Knee Braces",
+            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+            link: "#contactUs"
+        },
+        {
+            id: 4,
+            image: HipBraces,
+            title: "Hip Braces",
+            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+            link: "#contactUs"
+        }
+    ];
     return (
         <main>
             <section className={styles.hero}>
@@ -46,7 +90,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <ProductSlider heading="Some of Our Products" />
+            <ProductSlider heading="Some of Our Products" data={data} />
             <section className={styles.about}>
                 <div className={styles.content}>
                     <h2>Lorem Ipsum</h2>

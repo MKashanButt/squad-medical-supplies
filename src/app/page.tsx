@@ -7,6 +7,7 @@ import ProductSlider from "@/components/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, Navigation } from "swiper/modules";
 import styles from "@/assets/css/Home.module.css"
+import PopupForm from "@/components/PopupForm";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,14 +19,54 @@ import HeroSlideThree from "@/assets/images/hero-slider-two.png"
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
+import Wheelchairs from "@/assets/images/wheelchairs.jpg"
+import HipBraces from "@/assets/images/hip-braces.jpg"
+
 import AboutUs from "@/assets/images/about-us.png"
 import aetna from "@/assets/images/aetna-insurance.png"
 import humana from "@/assets/images/humana-insurance.jpg"
 import molina from "@/assets/images/molina-insurance.png"
 import wellcare from "@/assets/images/wellcare-insurance.png"
-import PopupForm from "@/components/PopupForm";
+
+interface Product {
+  id: number,
+  image: any,
+  title: string,
+  description: string,
+  link: string
+}
 
 export default function Home() {
+  const data: Product[] = [
+    {
+      id: 1,
+      image: Wheelchairs,
+      title: "Wheelchairs",
+      description: "Discover our range of comfortable and durable wheelchairs, designed for ease of use and enhanced mobility. Choose the perfect model to fit your lifestyle and needs.",
+      link: "#contactUs"
+    },
+    {
+      id: 2,
+      image: CgmMonitors,
+      title: "CGM Monitors",
+      description: "Stay on top of your health with our continuous glucose monitors, providing real-time blood sugar data for optimal diabetes management. Easy to use and highly accurate.",
+      link: "#contactUs"
+    },
+    {
+      id: 3,
+      image: KneeBraces,
+      title: "Knee Braces",
+      description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+      link: "#contactUs"
+    },
+    {
+      id: 4,
+      image: HipBraces,
+      title: "Hip Braces",
+      description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
+      link: "#contactUs"
+    }
+  ];
   const navigationNextRef = useRef(null);
   const navigationPrevRef = useRef(null);
 
@@ -165,7 +206,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ProductSlider heading="Products" />
+      <ProductSlider heading="Products" data={data} />
       <section className={styles.stats}>
         <span>At Squad Medical Supplies</span>
         <h2>Our Stats</h2>
