@@ -23,10 +23,13 @@ import Wheelchairs from "@/assets/images/wheelchairs.jpg"
 import HipBraces from "@/assets/images/hip-braces.jpg"
 
 import AboutUs from "@/assets/images/about-us.png"
-import aetna from "@/assets/images/aetna-insurance.png"
-import humana from "@/assets/images/humana-insurance.jpg"
-import molina from "@/assets/images/molina-insurance.png"
+
 import wellcare from "@/assets/images/wellcare-insurance.png"
+import humana from "@/assets/images/humana-insurance.jpg"
+import clover from "@/assets/images/clover-insurance.jpg"
+import aetna from "@/assets/images/aetna-insurance.png"
+import cigna from "@/assets/images/cigna-insurance.jpg"
+import uhc from "@/assets/images/uhc-insurance.jpg"
 
 interface Product {
   id: number,
@@ -278,10 +281,12 @@ export default function Home() {
         <h2>Insurances We Accept</h2>
         <p>Know if you are covered by our ever growing list of Health Plans</p>
         <div className={styles.stage}>
-          <Image src={aetna} alt="aetna insurance logo" />
-          <Image src={humana} alt="humana insurance logo" />
-          <Image src={molina} alt="molina insurance logo" />
-          <Image src={wellcare} alt="wellcare insurance logo" />
+          <Image src={wellcare} alt="wellcare-insurance-logo" />
+          <Image src={humana} alt="humana-insurance-logo" />
+          <Image src={clover} alt="clover-insurance-logo" />
+          <Image src={aetna} alt="aetna-insurance-logo" />
+          <Image src={cigna} alt="cigna-insurance-logo" />
+          <Image src={uhc} alt="uhc-insurance-logo" />
         </div>
       </section>
       <section className={styles.cta}>
