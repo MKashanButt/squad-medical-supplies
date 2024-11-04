@@ -26,7 +26,6 @@ import AboutUs from "@/assets/images/about-us.png"
 
 import wellcare from "@/assets/images/wellcare-insurance.png"
 import humana from "@/assets/images/humana-insurance.jpg"
-import clover from "@/assets/images/clover-insurance.jpg"
 import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
@@ -283,7 +282,6 @@ export default function Home() {
         <div className={styles.stage}>
           <Image src={wellcare} alt="wellcare-insurance-logo" />
           <Image src={humana} alt="humana-insurance-logo" />
-          <Image src={clover} alt="clover-insurance-logo" />
           <Image src={aetna} alt="aetna-insurance-logo" />
           <Image src={cigna} alt="cigna-insurance-logo" />
           <Image src={uhc} alt="uhc-insurance-logo" />
