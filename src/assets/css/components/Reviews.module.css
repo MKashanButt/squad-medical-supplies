@@ -1,0 +1,79 @@
+.reviews {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 20px;
+    margin: 50px auto;
+}
+
+.reviews h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.reviews .stage {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.reviews .stage .item {
+    width: calc(100% * (1/3));
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.reviews .stage .item .icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    opacity: 10%;
+}
+
+.reviews .stage .item .avatar {
+    border-radius: 25px
+}
+
+.reviews .stage .item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.reviews .stage .item p,
+.reviews .stage .item span {
+    font-size: 14px
+}
+
+.reviews .stage .item hr {
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.reviews .stage .item span {
+    font-weight: bold;
+}
+
+@media (max-width:360px) {
+    .reviews h2 {
+        font-size: 30px;
+    }
+
+    .reviews .stage {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .reviews .stage .item {
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
