@@ -251,70 +251,6 @@
     cursor: pointer;
 }
 
-.latestReviews {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 50px 20px;
-    margin: 50px auto;
-}
-
-.latestReviews h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: auto;
-}
-
-.latestReviews .stage {
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
-    gap: 20px;
-}
-
-.latestReviews .stage .item {
-    width: calc(100% * (1/3));
-    padding: 20px;
-    position: relative;
-    text-align: center;
-}
-
-.latestReviews .stage .item .icon {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
-    opacity: 10%;
-}
-
-.latestReviews .stage .item .avatar {
-    border-radius: 25px
-}
-
-.latestReviews .stage .item h3 {
-    text-transform: uppercase;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.latestReviews .stage .item p,
-.latestReviews .stage .item span {
-    font-size: 14px
-}
-
-.latestReviews .stage .item hr {
-    width: 80px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.latestReviews .stage .item span {
-    font-weight: bold;
-}
-
 @media (max-width: 640px) {
     .hero {
         padding: 40px 20px;
@@ -386,19 +322,5 @@
 
     .filters form {
         position: static;
-    }
-
-    .latestReviews h2 {
-        font-size: 30px;
-    }
-
-    .latestReviews .stage {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .latestReviews .stage .item {
-        width: 100%;
-        padding: 20px 10px;
     }
 }

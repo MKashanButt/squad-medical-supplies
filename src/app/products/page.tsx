@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import styles from "@/assets/css/Products.module.css"
 
 import HeroImage from "@/assets/images/doctor-group.png"
-import quotes from "@/assets/images/quotes.png"
 import Link from "next/link";
 import { closeDialog, toggleDialog } from "@/utils/DialogHelper";
 import PopupForm from "@/components/PopupForm";
@@ -22,6 +21,7 @@ import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
 import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
+import Reviews from "@/components/Reviews";
 
 interface Product {
     id: number,
@@ -309,35 +309,7 @@ export default function Products() {
                     </form>
                 </div>
             </section>
-            <section className={styles.latestReviews}>
-                <h2>Latest Reviews</h2>
-                <div className={styles.stage}>
-                    <div className={styles.item}>
-                        <Image src={quotes} alt="quote-icon" className={styles.icon} />
-                        <Image src="https://placehold.co/50" alt="review-avatar" width="50" height="50" className={styles.avatar} />
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam delectus eveniet architecto voluptatibus explicabo consectetur, quia sed quaerat! Doloribus.</p>
-                        <hr />
-                        <span>Lorem</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src={quotes} alt="quote-icon" className={styles.icon} />
-                        <Image src="https://placehold.co/50" alt="review-avatar" width="50" height="50" className={styles.avatar} />
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam delectus eveniet architecto voluptatibus explicabo consectetur, quia sed quaerat! Doloribus.</p>
-                        <hr />
-                        <span>Lorem</span>
-                    </div>
-                    <div className={styles.item}>
-                        <Image src={quotes} alt="quote-icon" className={styles.icon} />
-                        <Image src="https://placehold.co/50" alt="review-avatar" width="50" height="50" className={styles.avatar} />
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas magnam delectus eveniet architecto voluptatibus explicabo consectetur, quia sed quaerat! Doloribus.</p>
-                        <hr />
-                        <span>Lorem</span>
-                    </div>
-                </div>
-            </section>
+            <Reviews />
             <PopupForm id="braces" onClose={() => closeDialog('braces')} />
         </main>
     )
