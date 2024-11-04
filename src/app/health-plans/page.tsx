@@ -174,7 +174,7 @@ export default function dmeEquipments() {
                         {/* <Image/> */}
                         <div className={styles.overlay}></div>
                         <div className={styles.content}>
-                            <h3>Health Plans</h3>
+                            <h3>DME Equipments</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, id molestiae. Eligendi nulla magnam quaerat laborum doloribus quasi dicta vero!</p>
                         </div>
                     </div>
