@@ -343,7 +343,7 @@
 }
 
 .insurances .stage {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,7 +352,7 @@
 }
 
 .insurances .stage img {
-    width: 200px;
+    width: fit-content;
     height: 80px;
 }
 

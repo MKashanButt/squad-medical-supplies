@@ -2,92 +2,20 @@
 
 import styles from "@/assets/css/Healthplans.module.css"
 import Image from "next/image"
+import Reviews from "@/components/Reviews"
 
 import hero from "@/assets/images/healthplans-hero.jpg"
-
-import KneeBraces from "@/assets/images/knee-braces.jpg"
-import BraceSleves from "@/assets/images/brace-sleves.jpg"
-import CgmMonitors from "@/assets/images/cgm-monitors.jpg"
-import Wheelchairs from "@/assets/images/wheelchairs.jpg"
-import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
-import HipBraces from "@/assets/images/hip-braces.jpg"
-import TenseUnit from "@/assets/images/tense-unit.jpg"
-import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 
 import whyGetHealthPlan from "@/assets/images/whyGetHealthPlan.jpg"
 import whyChooseUs from "@/assets/images/whychooseus.jpg"
 
-import ProductSlider from "@/components/ProductSlider"
-import Reviews from "@/components/Reviews"
-
-interface Product {
-    id: number;
-    image: any;
-    title: string;
-    description: string;
-    link: string;
-}
+import wellcare from "@/assets/images/wellcare-insurance.png"
+import humana from "@/assets/images/humana-insurance.jpg"
+import aetna from "@/assets/images/aetna-insurance.png"
+import cigna from "@/assets/images/cigna-insurance.jpg"
+import uhc from "@/assets/images/uhc-insurance.jpg"
 
 export default function dmeEquipments() {
-    const data: Product[] = [
-        {
-            id: 1,
-            image: Wheelchairs,
-            title: "Wheelchairs",
-            description: "Discover our range of comfortable and durable wheelchairs, designed for ease of use and enhanced mobility. Choose the perfect model to fit your lifestyle and needs.",
-            link: "#contactUs"
-        },
-        {
-            id: 2,
-            image: CgmMonitors,
-            title: "CGM Monitors",
-            description: "Stay on top of your health with our continuous glucose monitors, providing real-time blood sugar data for optimal diabetes management. Easy to use and highly accurate.",
-            link: "#contactUs"
-        },
-        {
-            id: 3,
-            image: KneeBraces,
-            title: "Knee Braces",
-            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
-            link: "#contactUs"
-        },
-        {
-            id: 4,
-            image: HipBraces,
-            title: "Hip Braces",
-            description: "Support and stabilize your joints with our high-quality braces, designed for maximum comfort and effectiveness. Ideal for injury recovery and daily use.",
-            link: "#contactUs"
-        },
-        {
-            id: 5,
-            image: BraceSleves,
-            title: "Brace Sleeves",
-            description: "Experience optimal joint support with our elastic sleeves, which improve circulation and provide gentle compression therapy.",
-            link: "#contactUs"
-        },
-        {
-            id: 6,
-            image: UvbLightWands,
-            title: "UVB Light Wands",
-            description: "Portable UVB therapy wands effective for managing skin conditions like psoriasis with controlled UVB exposure.",
-            link: "#contactUs"
-        },
-        {
-            id: 7,
-            image: TenseUnit,
-            title: "TENS Unit",
-            description: "Portable Transcutaneous Electrical Nerve Stimulation device that offers pain relief through soothing electric pulses.",
-            link: "#contactUs"
-        },
-        {
-            id: 8,
-            image: LymphedemaPumpMassagers,
-            title: "Lymphedema Pump Massagers",
-            description: "Designed for promoting lymphatic drainage, these massagers reduce swelling and improve circulation with adjustable pressure levels.",
-            link: "#contactUs"
-        }
-    ];
-
     return (
         <main>
             <section className={styles.hero}>
@@ -183,7 +111,16 @@ export default function dmeEquipments() {
                     </div>
                 </div>
             </section>
-            <section className={styles.healthplans}>
+            <section className={styles.insurances}>
+                <h2>Healthplans We Provide</h2>
+                <p>Know if you are covered by our ever growing list of Health Plans</p>
+                <div className={styles.stage}>
+                    <Image src={wellcare} alt="wellcare-insurance-logo" />
+                    <Image src={humana} alt="humana-insurance-logo" />
+                    <Image src={aetna} alt="aetna-insurance-logo" />
+                    <Image src={cigna} alt="cigna-insurance-logo" />
+                    <Image src={uhc} alt="uhc-insurance-logo" />
+                </div>
             </section>
             <section className={styles.someKeyBenefits}>
                 <div className={styles.image}>
