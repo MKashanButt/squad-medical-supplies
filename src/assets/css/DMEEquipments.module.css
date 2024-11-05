@@ -166,6 +166,7 @@
 
 .chossingSquadMedSupplies .stage .item .icon {
     width: 40px;
+    fill: white;
 }
 
 .chossingSquadMedSupplies .stage .item h3 {
