@@ -267,6 +267,7 @@
     color: white;
     border: 1px solid var(--blue);
     z-index: 90;
+    cursor: pointer;
 }
 
 .cta .overlay {
