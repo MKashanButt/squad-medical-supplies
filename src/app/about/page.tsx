@@ -4,10 +4,11 @@ import Image from "next/image"
 import doctor from "@/assets/images/doctor.jpg"
 import ProductSlider from "@/components/ProductSlider"
 
-import aetnaIsurance from "@/assets/images/aetna-insurance.png"
-import humanaIsurance from "@/assets/images/humana-insurance.jpg"
-import molinaIsurance from "@/assets/images/molina-insurance.png"
-import wellcareIsurance from "@/assets/images/wellcare-insurance.png"
+import wellcare from "@/assets/images/wellcare-insurance.png"
+import humana from "@/assets/images/humana-insurance.jpg"
+import aetna from "@/assets/images/aetna-insurance.png"
+import cigna from "@/assets/images/cigna-insurance.jpg"
+import uhc from "@/assets/images/uhc-insurance.jpg"
 
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
@@ -109,13 +110,14 @@ export default function About() {
                 </div>
             </section>
             <section className={styles.insurances}>
-                <h2>Insurances We Accept</h2>
+                <h2>Insurance We Provide</h2>
                 <p>Know if you are covered by our ever growing list of Health Plans</p>
                 <div className={styles.stage}>
-                    <Image src={aetnaIsurance} alt="aetna-insurance" />
-                    <Image src={humanaIsurance} alt="humana-insurance" />
-                    <Image src={molinaIsurance} alt="molina-insurance" />
-                    <Image src={wellcareIsurance} alt="wellcare-insurance" />
+                    <Image src={wellcare} alt="wellcare-insurance-logo" />
+                    <Image src={humana} alt="humana-insurance-logo" />
+                    <Image src={aetna} alt="aetna-insurance-logo" />
+                    <Image src={cigna} alt="cigna-insurance-logo" />
+                    <Image src={uhc} alt="uhc-insurance-logo" />
                 </div>
             </section>
         </main>
