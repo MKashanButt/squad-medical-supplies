@@ -60,8 +60,41 @@ export default function About() {
             <section className={styles.hero}>
                 <div className={styles.overlay}></div>
                 <div className={styles.content}>
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium iste sed deleniti dolorum ea recusandae natus, sequi rem.</p>
+                    <h1>Accompanying you through <span>Thick & Thin</span></h1>
+                </div>
+                <div className={styles.overlayContent}>
+                    <div className={styles.item}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
+                            <path d="M376 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                            <path
+                                d="M288 304c-87 0-175.3 48-191.64 138.6-2 10.92 4.21 21.4 15.65 21.4H464c11.44 0 17.62-10.48 15.65-21.4C463.3 352 375 304 288 304z"
+                                stroke-miterlimit="10" stroke-width="32" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" d="M88 176v112M144 232H32" />
+                        </svg>
+                        <h3>Experience of 5+ years</h3>
+                    </div>
+                    <div className={styles.item}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
+                            <rect x="32" y="112" width="448" height="352" rx="48" ry="48"
+                                stroke-linejoin="round" stroke-width="32" />
+                            <path d="M144 112V80a32 32 0 0132-32h160a32 32 0 0132 32v32M256 208v160M336 288H176"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                        </svg>
+                        <h3>1100 Patients Cured</h3>
+                    </div>
+                    <div className={styles.item}>
+                        <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
+                            <path
+                                d="M313.27 124.64L198.73 51.36a32 32 0 00-29.28.35L56.51 127.49A16 16 0 0048 141.63v295.8a16 16 0 0023.49 14.14l97.82-63.79a32 32 0 0129.5-.24l111.86 73a32 32 0 0029.27-.11l115.43-75.94a16 16 0 008.63-14.2V74.57a16 16 0 00-23.49-14.14l-98 63.86a32 32 0 01-29.24.35zM328 128v336M184 48v336"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                        </svg>
+                        <h3>Operating in 2 states</h3>
+                    </div>
                 </div>
             </section>
             <section className={styles.missionVision}>
@@ -120,6 +153,6 @@ export default function About() {
                     <Image src={uhc} alt="uhc-insurance-logo" />
                 </div>
             </section>
-        </main>
+        </main >
     )
 }
