@@ -115,7 +115,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 14px;
 }
 
 .about .content h2 {
@@ -162,6 +161,111 @@
     z-index: 50;
 }
 
+.services {
+    width: 80%;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.services h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.services .stage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services .stage .tabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.services .stage .tabs .item {
+    width: calc(100% * (1/3) - 10px);
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    fill: white;
+    border-bottom: 2px solid var(--blue);
+    text-align: center;
+}
+
+.services .stage .tabs .active {
+    background-color: white;
+    color: black;
+    fill: black;
+}
+
+.services .stage .info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.services .stage .info .item {
+    width: calc(100% * (1/7) - 20px);
+    padding: 10px;
+    text-align: center;
+}
+
+.services .stage .info .item img {
+    width: 200px;
+    height: 200px;
+}
+
+.services .stage .healthcareInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .stage .healthcareInfo img {
+    width: fit-content;
+    height: 80px;
+    margin: auto;
+}
+
+.services .stage .caregiverInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.services .stage .caregiverInfo .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.services .stage .caregiverInfo .content h3 {
+    font-size: 40px;
+}
+
+.services .stage .caregiverInfo .content button {
+    width: 20%;
+}
+
+.services .stage .caregiverInfo .image {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .stage .caregiverInfo .image img {
+    width: 60%;
+    height: 600px;
+}
+
 .insurances {
     display: flex;
     flex-direction: column;
@@ -187,6 +291,99 @@
 .insurances .stage img {
     width: 200px;
     height: 80px;
+}
+
+.cta {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/cta-bg.jpg');
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.cta .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 50%;
+    background: rgba(52, 52, 52, 1);
+    z-index: 50;
+}
+
+.cta .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 60;
+}
+
+.cta .container .content {
+    width: 80%;
+}
+
+.cta .container button {
+    justify-self: end;
+}
+
+.howToBuy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 35px 0;
+    background-color: var(--blue);
+    position: relative;
+    margin-top: 90px;
+}
+
+.howToBuy img {
+    position: absolute;
+    top: -35px;
+}
+
+.howToBuy h2 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.howToBuy .content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.howToBuy .stage {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    background-color: var(--blue);
+    user-select: none;
+}
+
+.howToBuy .item {
+    width: calc(100% * (1/3));
+    display: flex;
+    border-left: 1px solid white;
+    gap: 10px;
+    padding: 40px;
+    align-items: center;
+    color: white;
+}
+
+.howToBuy .item:nth-of-type(1) {
+    border: none;
+}
+
+.howToBuy .item .icon {
+    width: 50px;
+    fill: white;
 }
 
 @media (max-width: 640px) {
