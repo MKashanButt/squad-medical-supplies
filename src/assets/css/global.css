@@ -247,9 +247,12 @@ html {
   width: 80px;
 }
 
+.none {
+  display: none;
+}
+
 @media (min-width:1300px) {
   main {
-    width: 90%;
     margin: auto;
   }
 }
