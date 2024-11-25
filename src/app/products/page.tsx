@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image"
 
 import ProductSlider from "@/components/ProductSlider";
+import Reviews from "@/components/Reviews";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,7 +22,6 @@ import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
 import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
-import Reviews from "@/components/Reviews";
 
 interface Product {
     id: number,
