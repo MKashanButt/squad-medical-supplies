@@ -216,6 +216,14 @@ export default function Products() {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
                     </div>
                 </div>
+                <div className={styles.item}>
+                    <div className={styles.overlay}></div>
+                    <div className={styles.content}>
+                        <span>Caregivers</span>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
+                    </div>
+                </div>
             </section>
             <ProductSlider heading="Trending Products" data={data} />
             <section className={styles.info}>
