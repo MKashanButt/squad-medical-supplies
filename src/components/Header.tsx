@@ -7,6 +7,8 @@ import Logo from "@/assets/images/logo.png"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
+import PopupForm from "./PopupForm"
+import { closeDialog, toggleDialog } from "@/utils/DialogHelper"
 
 export default function Header() {
     const pathname = usePathname()
@@ -42,9 +44,15 @@ export default function Header() {
                             {toggleDropdown &&
                                 <div className={styles.dropdown}>
                                     <ul>
-                                        <Link href="/dme-equipments"><li>DME Equipments</li></Link>
-                                        <Link href="health-plans"><li>Health Plans</li></Link>
-                                        <Link href="caregivers"><li className={styles.lastItem}>Caregivers</li></Link>
+                                        <Link href="dme-equipments">
+                                            <li>DME Equipments</li>
+                                        </Link>
+                                        <Link href="health-plans">
+                                            <li>Health Plans</li>
+                                        </Link>
+                                        <Link href="caregivers">
+                                            <li className={styles.lastItem}>Caregivers</li>
+                                        </Link>
                                     </ul>
                                 </div>
                             }
@@ -53,11 +61,10 @@ export default function Header() {
                             <Link href="/about">About</Link>
                         </li>
                     </ul>
-                    <a href="#contactUs">
-                        <button className={styles.headerBtn}>Contact Us</button>
-                    </a>
+                    <button className={styles.headerBtn} onClick={() => toggleDialog('braces')}>Contact Us</button>
                 </nav>
             </header>
+            <PopupForm id="braces" onClose={() => closeDialog("braces")} />
         </>
     )
 }
