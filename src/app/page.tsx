@@ -29,6 +29,7 @@ import humana from "@/assets/images/humana-insurance.jpg"
 import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
+import Link from "next/link";
 
 interface Product {
   id: number,
@@ -109,9 +110,9 @@ export default function Home() {
           <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
             <Image src={HeroSlideOne} alt="" className={styles.image} />
           </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
+          {/* <SwiperSlide className={styles.slide}>
             <Image src={HeroSlideTwo} alt="" className={styles.image} />
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide className={`${styles.slide} ${styles.slideLast}`}>
             <Image src={HeroSlideThree} alt="" className={styles.image} />
           </SwiperSlide>
@@ -141,7 +142,7 @@ export default function Home() {
               broad product catalog comprising: incontinence, ostomy, urological, wound care, and diabetes
               supplies,
               all delivered conveniently and discreetly to the patient's home.</p>
-            <button>About Us</button>
+            <Link href="/about" ><button>About Us</button></Link>
           </div>
         </div>
         <div className={styles.stage}>
