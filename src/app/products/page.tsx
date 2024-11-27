@@ -219,7 +219,7 @@ export default function Products() {
                 <div className={styles.item}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
-                        <span>Caregivers</span>
+                        <span>Tens Unit</span>
                         <h3>Lorem ipsum</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
                     </div>
