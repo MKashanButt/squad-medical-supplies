@@ -15,7 +15,7 @@ import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
 
 import whyGetDmeServies from "@/assets/images/whyGetDmeServies.png"
-import whyChooseUs from "@/assets/images/whychooseus.jpg"
+import whyChooseUs from "@/assets/images/whychooseus.png"
 
 import ProductSlider from "@/components/ProductSlider"
 import Reviews from "@/components/Reviews"
