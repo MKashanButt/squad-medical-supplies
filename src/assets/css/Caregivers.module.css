@@ -288,3 +288,141 @@
     top: 0;
     left: 0;
 }
+
+@media (max-width: 640px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero .content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .hero .content h1 {
+        font-size: 28px;
+    }
+
+    .hero .content p {
+        font-size: 14px;
+    }
+
+    .whyGetDmeServies,
+    .someKeyBenefits {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .whyGetDmeServies .content h2,
+    .someKeyBenefits .content h2,
+    .someOtherServices .content h2 {
+        font-size: 20px;
+    }
+
+    .whyGetDmeServies .content,
+    .someKeyBenefits .content,
+    .whyGetDmeServies .image,
+    .someKeyBenefits .image {
+        width: 100%;
+    }
+
+    .whyGetDmeServies .image img {
+        height: 60%;
+    }
+
+    .whyGetDmeServies .stage {
+        flex-direction: column;
+    }
+
+    .whyGetDmeServies .stage .item,
+    .someKeyBenefits .stage .item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .someKeyBenefits ul {
+        padding-left: 20px;
+    }
+
+    .someKeyBenefits ul li {
+        font-size: 12px;
+    }
+
+    .someKeyBenefits .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .chossingSquadMedSupplies {
+        padding: 50px 20px;
+    }
+
+    .chossingSquadMedSupplies>h2 {
+        font-size: 30px;
+    }
+
+    .chossingSquadMedSupplies .stage {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .chossingSquadMedSupplies .stage .item {
+        width: 100%;
+        border: none;
+    }
+
+    .chossingSquadMedSupplies .stage .item h3 {
+        font-size: 24px;
+    }
+
+    .cta {
+        padding: 40px 20px;
+        gap: 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .cta img {
+        width: 230%;
+        left: -112px
+    }
+
+    .cta span {
+        font-size: 14px;
+    }
+
+    .cta h2 {
+        font-size: 40px;
+    }
+
+    .cta button {
+        width: 50%;
+    }
+
+    .someOtherServices {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .someOtherServices .content {
+        width: 100%;
+    }
+
+    .someOtherServices .services {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .someOtherServices .services .item {
+        padding: 10px;
+    }
+
+    .someOtherServices .services .item img {
+        height: auto;
+    }
+
+    .someOtherServices .services .item .content {
+        font-size: 14px;
+    }
+}
