@@ -252,7 +252,7 @@ html {
 }
 
 .container {
-  margin: auto;
+  margin: auto !important;
 }
 
 @media (max-width: 640px) {
@@ -353,30 +353,30 @@ html {
 
 @media (min-width:1300px) and (max-width:1400px) {
   .container {
-    width: 1300px;
+    width: 1300px !important;
   }
 }
 
 @media (min-width:1400px) and (max-width:1500px) {
   .container {
-    width: 1400px;
+    width: 1400px !important;
   }
 }
 
 @media (min-width:1500px) and (max-width:1600px) {
   .container {
-    width: 1500px;
+    width: 1500px !important;
   }
 }
 
 @media (min-width:1700px) and (max-width:1800px) {
   .container {
-    width: 1700px;
+    width: 1700px !important;
   }
 }
 
 @media (min-width:1800px) {
   .container {
-    width: 1800px;
+    width: 1800px !important;
   }
 }
