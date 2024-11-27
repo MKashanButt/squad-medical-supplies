@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </Swiper>
       </section>
-      <section className={styles.whatWeDo}>
+      <section className={`${styles.whatWeDo} container`}>
         <div className={styles.head}>
           <div className={styles.headings}>
             <span>Squad Medical Supplies</span>
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.promotion} id="topProducts">
+      <section className={`${styles.promotion} container`} id="topProducts">
         <h2>Our Top 3 Helping Products</h2>
         <div className={styles.stage}>
           <div className={styles.item} id="dialogBraces">
@@ -215,7 +215,7 @@ export default function Home() {
         <h2>Our Stats</h2>
         <hr />
         <p>Speak for themselves</p>
-        <div className={styles.stage} id="stats">
+        <div className={`${styles.stage} container`} id="stats">
           <div className={styles.item}>
             <div className={styles.container}>
               <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
@@ -259,7 +259,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.aboutUs} id="aboutUs">
+      <section className={`${styles.aboutUs} container`} id="aboutUs">
         <div className={styles.image}>
           <Image src={AboutUs} alt="" />
         </div>
@@ -277,7 +277,7 @@ export default function Home() {
           <a href=""><button>Contact Us at +1 (404) 442-2019</button></a>
         </div>
       </section>
-      <section className={styles.insurances}>
+      <section className={`${styles.insurances} container`}>
         <h2>Insurances We Accept</h2>
         <p>Know if you are covered by our ever growing list of Health Plans</p>
         <div className={styles.stage}>
@@ -290,7 +290,7 @@ export default function Home() {
       </section>
       <section className={styles.cta}>
         <div className={styles.overlay}></div>
-        <div className={styles.container}>
+        <div className={`${styles.container} container`}>
           <div className={styles.content}>
             <h2>Need Help?</h2>
             <p>Get in touch now and get free consultation</p>

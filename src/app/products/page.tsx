@@ -191,7 +191,7 @@ export default function Products() {
                     </Link>
                 </button>
             </form>
-            <section className={styles.promotion}>
+            <section className={`${styles.promotion} container`}>
                 <div className={styles.item}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
@@ -271,7 +271,7 @@ export default function Products() {
                     </div>
                 </div>
             </section>
-            <section className={styles.products}>
+            <section className={`${styles.products} container`}>
                 <div className={styles.stage} id="products">
                     {filteredProducts.map((product) => (
                         <div className={styles.item} key={product.id}>

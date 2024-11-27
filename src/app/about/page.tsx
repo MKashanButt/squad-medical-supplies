@@ -129,7 +129,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className={styles.missionVision}>
+            <section className={`${styles.missionVision} container`}>
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et facere eius iure laudantium? Beatae possimus asperiores ullam dolorem accusamus itaque quaerat accusantium quia? Ducimus, quas. Similique nostrum cupiditate laboriosam, consequatur obcaecati aspernatur sunt tempora excepturi ab omnis quaerat praesentium amet debitis sit, enim minus fuga voluptate harum ipsa aut ducimus. Voluptatibus id dicta molestiae temporibus aperiam harum cum impedit?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et facere eius iure laudantium? Beatae possimus asperiores ullam dolorem accusamus itaque quaerat accusantium quia? Ducimus, quas. Similique nostrum cupiditate laboriosam, consequatur obcaecati aspernatur sunt tempora excepturi ab omnis quaerat praesentium amet debitis sit, enim minus fuga voluptate harum ipsa aut ducimus. Voluptatibus id dicta molestiae temporibus aperiam harum cum impedit?</p>
@@ -156,7 +156,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className={styles.about}>
+            <section className={`${styles.about} container`}>
                 <div className={styles.content}>
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit laborum illo iure iusto ullam dignissimos modi dolor consectetur aut ab eligendi atque earum autem harum illum sequi dolore, eaque nemo? Explicabo.</p>
@@ -175,7 +175,7 @@ export default function About() {
             </section>
             <section className={styles.howToBuy}>
                 <Image src={shopping} alt="shopping-icon" />
-                <div className={styles.content}>
+                <div className={`${styles.content} container`}>
                     <h2>How to buy?</h2>
                     <div className={styles.stage}>
                         <div className={styles.item}>
@@ -224,7 +224,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className={styles.services}>
+            <section className={`${styles.services} container`}>
                 <h2>Services We Provide</h2>
                 <div className={styles.stage}>
                     <div className={styles.tabs}>
@@ -290,7 +290,7 @@ export default function About() {
             </section>
             <section className={styles.cta}>
                 <div className={styles.overlay}></div>
-                <div className={styles.container}>
+                <div className={`${styles.container} container`}>
                     <div className={styles.content}>
                         <h2>Need Help?</h2>
                         <p>Get in touch now and get free consultation</p>

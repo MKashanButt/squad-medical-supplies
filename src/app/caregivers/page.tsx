@@ -22,7 +22,7 @@ export default function caregivers() {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci laborum dicta nihil tempore, cum, unde quia numquam quam omnis doloremque nulla. Et velit ipsa repellendus eos impedit, dicta vero minima voluptates optio quis maiores. Delectus eligendi laudantium suscipit itaque.</p>
                 </div>
             </section>
-            <section className={styles.whyGetDmeServies}>
+            <section className={`${styles.whyGetDmeServies} container`}>
                 <div className={styles.content}>
                     <h2><hr />Why Get A Caregiver?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit repudiandae molestias nihil quaerat aliquid iure tenetur ipsam, earum facilis autem odit maiores possimus nesciunt culpa in soluta dolore molestiae quibusdam asperiores ut corporis. Eos, fugiat laboriosam! Blanditiis, iure obcaecati.</p>
@@ -106,7 +106,7 @@ export default function caregivers() {
                     </div>
                 </div>
             </section>
-            <section className={styles.someKeyBenefits}>
+            <section className={`${styles.someKeyBenefits} container`}>
                 <div className={styles.image}>
                     <Image src={whyChooseUs} alt="why-choose-us" />
                 </div>
@@ -154,7 +154,7 @@ export default function caregivers() {
                 <button>Find A Caregiver</button>
             </section>
             <Reviews />
-            <section className={styles.someOtherServices}>
+            <section className={`${styles.someOtherServices} container`}>
                 <div className={styles.content}>
                     <h2><hr />Some of Our Other Services</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis facilis dignissimos repudiandae consequuntur non, quod eos. Ipsam sunt beatae modi nemo, voluptates dolores impedit adipisci culpa distinctio qui veritatis deserunt doloremque, hic itaque quos quisquam. Quisquam harum ratione nihil, dolor dolores ex ducimus laboriosam doloribus cum repellendus pariatur error eveniet!</p>
