@@ -27,7 +27,7 @@ export default function Header() {
                 </div>
                 <p>Call us at: +1 (404) 442-2019</p>
             </div>
-            <header className={`${styles.header} container`}>
+            <header className={styles.header}>
                 <Link href="/">
                     <Image src={Logo} alt="" className={styles.logo} />
                 </Link>
