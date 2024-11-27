@@ -104,6 +104,10 @@
     background-image: url('../images/wheelchair.jpg');
 }
 
+.promotion .item:nth-of-type(4) {
+    background-image: url('../images/tense-unit.png');
+}
+
 .promotion .item span {
     width: fit-content;
     font-size: 10px;
