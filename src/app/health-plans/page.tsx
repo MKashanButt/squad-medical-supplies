@@ -4,10 +4,10 @@ import styles from "@/assets/css/Healthplans.module.css"
 import Image from "next/image"
 import Reviews from "@/components/Reviews"
 
-import hero from "@/assets/images/healthplans-hero.jpg"
+import hero from "@/assets/images/healthplans-hero.png"
 
 import whyGetHealthPlan from "@/assets/images/whyGetHealthPlan.jpg"
-import whyChooseUs from "@/assets/images/whychooseus.jpg"
+import whyChooseUs from "@/assets/images/whychooseus.png"
 
 import wellcare from "@/assets/images/wellcare-insurance.png"
 import humana from "@/assets/images/humana-insurance.jpg"
