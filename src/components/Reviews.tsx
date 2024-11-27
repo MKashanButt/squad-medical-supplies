@@ -52,7 +52,7 @@ export default function Reviews() {
             <h2>Latest Reviews</h2>
             <div className={styles.stage}>
                 {Reviews.map(e => (
-                    <div className={styles.item}>
+                    <div className={styles.item} key={e.id}>
                         <Image src={quotes} alt="quote-icon" className={styles.icon} />
                         <span className={styles.avatar}>{e.name.charAt(0)}</span>
                         <h3>{e.name}</h3>
