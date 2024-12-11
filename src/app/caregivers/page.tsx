@@ -6,9 +6,9 @@ import Reviews from "@/components/Reviews"
 import styles from "@/assets/css/Caregivers.module.css"
 
 import cta from "@/assets/images/caregivers-cta.jpg"
-import hero from "@/assets/images/healthplans-hero.jpg"
+import hero from "@/assets/images/healthplans-hero.png"
 import whyGetHealthPlan from "@/assets/images/whyGetHealthPlan.jpg"
-import whyChooseUs from "@/assets/images/whychooseus.jpg"
+import whyChooseUs from "@/assets/images/whychooseus.png"
 
 export default function caregivers() {
     return (
