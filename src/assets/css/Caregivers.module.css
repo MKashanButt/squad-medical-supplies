@@ -258,6 +258,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     z-index: 90;
+    color: white;
 }
 
 .cta button {

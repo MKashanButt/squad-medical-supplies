@@ -20,6 +20,13 @@ html {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--yellow);
+}
+
 .importantInfo {
   width: 100%;
   background-color: var(--blue);

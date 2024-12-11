@@ -124,7 +124,7 @@
 .whatWeDo .head h2 {
     font-size: 40px;
     text-transform: uppercase;
-    color: var(--blue);
+    color: var(--yellow);
 }
 
 .whatWeDo .head .content {
@@ -192,6 +192,7 @@
 .promotion .stage h3 {
     font-size: 25px;
     z-index: 60;
+    color: white;
 }
 
 .promotion .stage .item {
@@ -354,6 +355,11 @@
 .insurances .stage img {
     width: fit-content;
     height: 80px;
+}
+
+.insurances .stage .sierraLogo {
+    width: 20%;
+    height: 20%;
 }
 
 .cta {
