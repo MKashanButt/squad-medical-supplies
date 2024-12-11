@@ -6,8 +6,8 @@ html {
 }
 
 :root {
-  --blue: #20A0D8;
-  --yellow: #F18901;
+  --blue: #5CB8AA;
+  --yellow: #1A5364;
 }
 
 * {
@@ -22,7 +22,7 @@ html {
 
 .importantInfo {
   width: 100%;
-  background-color: rgba(32, 160, 216, 0.7);
+  background-color: var(--blue);
   color: white;
   padding: 10px 20px;
   display: flex;
