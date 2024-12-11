@@ -32,7 +32,6 @@ import uhc from "@/assets/images/uhc-insurance.jpg"
 import bcbs from "@/assets/images/bcbs-insurance.png"
 import sierra from "@/assets/images/sierra-insurance.png"
 import molina from "@/assets/images/molina-insurance.png"
-import americanProgressive from "@/assets/images/american-progressive-insurance.png"
 
 import Link from "next/link";
 
@@ -290,7 +289,6 @@ export default function Home() {
           <Image src={bcbs} alt="bcbs-insurance-logo" />
           {/* <Image src={sierra} alt="sierra-insurance-logo" className={styles.sierraLogo} /> */}
           <Image src={molina} alt="molina-insurance-logo" className={styles.molinaLogo} />
-          <Image src={americanProgressive} alt="american-progressive-insurance-logo" className={styles.americanProgressiveLogo} />
         </div>
       </section>
       <section className={styles.cta}>
