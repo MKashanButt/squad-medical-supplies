@@ -353,13 +353,20 @@
 }
 
 .insurances .stage img {
-    width: fit-content;
-    height: 80px;
+    width: 70%;
+    height: fit-content;
 }
 
 .insurances .stage .sierraLogo {
     width: 20%;
     height: 20%;
+}
+
+.insurances .stage .item {
+    width: calc(100% * (1/5) - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta {
@@ -527,6 +534,7 @@
     .insurances .stage {
         width: 100%;
         gap: 10px;
+        flex-direction: column;
     }
 
     .insurances .stage img {

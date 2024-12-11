@@ -30,8 +30,8 @@ import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
 import bcbs from "@/assets/images/bcbs-insurance.png"
-import sierra from "@/assets/images/sierra-insurance.png"
 import molina from "@/assets/images/molina-insurance.png"
+import clover from "@/assets/images/clover-insurance.png"
 
 import Link from "next/link";
 
@@ -281,14 +281,31 @@ export default function Home() {
         <h2>Insurances We Accept</h2>
         <p>Know if you are covered by our ever growing list of Health Plans</p>
         <div className={styles.stage}>
-          <Image src={wellcare} alt="wellcare-insurance-logo" />
-          <Image src={humana} alt="humana-insurance-logo" />
-          <Image src={aetna} alt="aetna-insurance-logo" />
-          <Image src={cigna} alt="cigna-insurance-logo" />
-          <Image src={uhc} alt="uhc-insurance-logo" />
-          <Image src={bcbs} alt="bcbs-insurance-logo" />
+          <div className={styles.item}>
+            <Image src={wellcare} alt="wellcare-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={humana} alt="humana-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={aetna} alt="aetna-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={cigna} alt="cigna-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={uhc} alt="uhc-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={bcbs} alt="bcbs-insurance-logo" />
+          </div>
+          <div className={styles.item}>
+            <Image src={clover} alt="clover-insurance-logo" />
+          </div>
           {/* <Image src={sierra} alt="sierra-insurance-logo" className={styles.sierraLogo} /> */}
-          <Image src={molina} alt="molina-insurance-logo" className={styles.molinaLogo} />
+          <div className={styles.item}>
+            <Image src={molina} alt="molina-insurance-logo" className={styles.molinaLogo} />
+          </div>
         </div>
       </section>
       <section className={styles.cta}>
