@@ -388,30 +388,44 @@
 
 @media (max-width: 640px) {
     .hero {
-        padding: 100px 20px;
+        height: 50vh;
     }
 
     .hero .content {
         width: 100%;
+        padding: 20px;
+        text-align: center;
     }
 
     .hero .content h1 {
         font-size: 30px;
-        margin-bottom: 8px;
+    }
+
+    .hero .overlayContent {
+        position: relative;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .hero .overlayContent .item {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .hero .overlayContent .item:nth-of-type(1) {
+        border: none;
     }
 
     .missionVision {
-        padding: 60px 20px;
+        margin-top: 200px;
+        padding-top: 230px;
     }
 
     .missionVision h2 {
         font-size: 30px;
-        margin-bottom: 15px;
-    }
-
-    .missionVision>p {
-        font-size: 14px;
-        margin-bottom: 8px;
     }
 
     .missionVision .stage {
@@ -419,68 +433,107 @@
         gap: 15px;
     }
 
-    .missionVision .stage .item .icon {
-        width: 30px;
-        padding: 8px;
-    }
-
     .about {
         flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        margin: 20px auto;
+        width: 90%;
     }
 
-    .about .content {
+    .about .content,
+    .about .image {
         width: 100%;
-        gap: 8px;
-        font-size: 13px;
     }
 
     .about .content h2 {
         font-size: 30px;
-        margin-bottom: 8px;
     }
 
     .about .content p {
         width: 100%;
     }
 
-    .about .content ul li {
-        margin-left: 15px;
-        font-size: 13px;
+    .services {
+        width: 90%;
+        padding: 50px 0;
     }
 
-    .about .image {
-        width: 100%;
-        padding: 0;
-    }
-
-    .about .image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about .image .shape {
-        width: 40%;
-        height: 100%;
-    }
-
-    .insurances {
-        padding: 60px 20px;
-    }
-
-    .insurances h2 {
+    .services h2 {
         font-size: 30px;
     }
 
-    .insurances .stage {
+    .services .stage {
+        flex-direction: column;
+    }
+
+    .services .stage .tabs {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .services .stage .tabs .item {
         width: 100%;
-        gap: 8px;
+    }
+
+    .services .stage .info .item {
+        width: 100%;
+    }
+
+    .services .stage .info .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .services .stage .caregiverInfo {
+        flex-direction: column;
+    }
+
+    .services .stage .caregiverInfo .content,
+    .services .stage .caregiverInfo .image {
+        width: 100%;
+    }
+
+    .services .stage .caregiverInfo .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .insurances .stage {
+        flex-direction: column;
     }
 
     .insurances .stage img {
-        width: 150px;
+        width: 100%;
         height: auto;
+    }
+
+    .cta .container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta .container .content,
+    .cta .container button {
+        width: 100%;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .howToBuy .stage {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .howToBuy .item {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+
+    .howToBuy .item:nth-of-type(1) {
+        border-bottom: 1px solid;
+    }
+
+    .howToBuy h2 {
+        margin-top: 20px;
+        font-size: 30px;
     }
 }
