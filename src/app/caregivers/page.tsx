@@ -6,8 +6,8 @@ import Reviews from "@/components/Reviews"
 import styles from "@/assets/css/Caregivers.module.css"
 
 import cta from "@/assets/images/caregivers-cta.jpg"
-import hero from "@/assets/images/healthplans-hero.png"
-import whyGetHealthPlan from "@/assets/images/whyGetHealthPlan.jpg"
+import hero from "@/assets/images/caregivers-hero.png"
+import whyGetCaregiver from "@/assets/images/whyGetCaregiver.png"
 import whyChooseUs from "@/assets/images/whychooseus.png"
 
 export default function caregivers() {
@@ -55,7 +55,7 @@ export default function caregivers() {
                     </div>
                 </div>
                 <div className={styles.image}>
-                    <Image src={whyGetHealthPlan} alt="" />
+                    <Image src={whyGetCaregiver} alt="" />
                 </div>
             </section>
             <section className={styles.chossingSquadMedSupplies}>
