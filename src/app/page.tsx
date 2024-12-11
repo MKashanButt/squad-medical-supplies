@@ -30,7 +30,6 @@ import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
 import bcbs from "@/assets/images/bcbs-insurance.png"
-import molina from "@/assets/images/molina-insurance.png"
 import clover from "@/assets/images/clover-insurance.png"
 import medicare from "@/assets/images/medicare-insurance.png"
 
@@ -302,10 +301,6 @@ export default function Home() {
           </div>
           <div className={styles.item}>
             <Image src={clover} alt="clover-insurance-logo" />
-          </div>
-          {/* <Image src={sierra} alt="sierra-insurance-logo" className={styles.sierraLogo} /> */}
-          <div className={styles.item}>
-            <Image src={molina} alt="molina-insurance-logo" className={styles.molinaLogo} />
           </div>
           <div className={styles.item}>
             <Image src={medicare} alt="medicare-insurance-logo" className={styles.molinaLogo} />

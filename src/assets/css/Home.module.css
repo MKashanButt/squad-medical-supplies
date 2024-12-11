@@ -363,7 +363,7 @@
 }
 
 .insurances .stage .item {
-    width: calc(100% * (1/5) - 10px);
+    width: calc(100% * (1/4) - 10px);
     display: flex;
     align-items: center;
     justify-content: center;
