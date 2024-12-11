@@ -29,6 +29,11 @@ import humana from "@/assets/images/humana-insurance.jpg"
 import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
+import bcbs from "@/assets/images/bcbs-insurance.png"
+import sierra from "@/assets/images/sierra-insurance.png"
+import molina from "@/assets/images/molina-insurance.png"
+import americanProgressive from "@/assets/images/american-progressive-insurance.png"
+
 import Link from "next/link";
 
 interface Product {
@@ -265,16 +270,12 @@ export default function Home() {
         </div>
         <div className={styles.content}>
           <h2>About Us</h2>
-          <p>At , our mission is to improve patient lives through innovative and dependable medical solutions.
-            Since 2020, we’ve proudly served over 1,000 patients, providing a comprehensive range of durable
-            medical equipment designed to meet diverse health needs.</p>
-          <p>From orthopedic braces to glucose monitors, our products are crafted with a focus on quality,
-            comfort, and effectiveness. We are dedicated to offering the latest advancements in medical
-            technology.We ensure our patients receive the best care and support. Trust us to be your partner in
-            health,
-            guiding you towards a more comfortable and healthier life.</p>
-
-          <a href=""><button>Contact Us at +1 (404) 442-2019</button></a>
+          <p>Our goal at Squad Medical Supplies is to make your life and the lives of those you care easier, healthier, and more comfortable. We are here to offer specialized solutions that support independence and well-being because we recognize the special needs of seniors. We are committed to helping you at every stage of your path to better living, whether that means providing you with knowledgeable advice on insurance and health plans or kind caregivers who treat you like family.</p>
+          <p>We are proud to provide a wide selection of Durable Medical Equipment (DME) that is intended to improve your quality of life. Our products, which range from wheelchairs and lymphedema pump massagers to knee braces and CGM monitors, are carefully chosen for their dependability and efficacy. Squad Medical Supplies makes certain that each item satisfies your particular requirements, delivering ease, security, and tranquility.</p>
+          <p>Our first priorities are your well-being and health. For this reason, we're dedicated to providing individualized care, open guidance, and continuous assistance. You are a member of our family when you work with Squad Medical Supplies, not just a client. Allow us to support you in living with grace, comfort, and the assurance that you have a reliable team on your side.</p>
+          <a href="">
+            <button>Contact Us at +1 (404) 442-2019</button>
+          </a>
         </div>
       </section>
       <section className={`${styles.insurances} container`}>
@@ -286,6 +287,10 @@ export default function Home() {
           <Image src={aetna} alt="aetna-insurance-logo" />
           <Image src={cigna} alt="cigna-insurance-logo" />
           <Image src={uhc} alt="uhc-insurance-logo" />
+          <Image src={bcbs} alt="bcbs-insurance-logo" />
+          {/* <Image src={sierra} alt="sierra-insurance-logo" className={styles.sierraLogo} /> */}
+          <Image src={molina} alt="molina-insurance-logo" className={styles.molinaLogo} />
+          <Image src={americanProgressive} alt="american-progressive-insurance-logo" className={styles.americanProgressiveLogo} />
         </div>
       </section>
       <section className={styles.cta}>
