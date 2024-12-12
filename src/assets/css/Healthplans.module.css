@@ -242,7 +242,7 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 .insurances h2 {
@@ -259,8 +259,20 @@
 }
 
 .insurances .stage img {
-    width: fit-content;
-    height: 80px;
+    width: 70%;
+    height: fit-content;
+}
+
+.insurances .stage .sierraLogo {
+    width: 20%;
+    height: 20%;
+}
+
+.insurances .stage .item {
+    width: calc(100% * (1/4) - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 640px) {

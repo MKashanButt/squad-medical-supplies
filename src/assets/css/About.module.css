@@ -266,31 +266,44 @@
     height: 600px;
 }
 
-.insurances {
+.healthcareInfo {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
-.insurances h2 {
+.healthcareInfo h2 {
     font-size: 40px;
 }
 
-.insurances .stage {
-    width: 80%;
+.healthcareInfo .stage {
+    width: 90%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.insurances .stage img {
-    width: 200px;
-    height: 80px;
+.healthcareInfo .stage img {
+    width: 70% !important;
+    height: fit-content !important;
+}
+
+.healthcareInfo .stage .sierraLogo {
+    width: 20%;
+    height: 20%;
+}
+
+.healthcareInfo .stage .item {
+    width: calc(100% * (1/4) - 10px) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta {
