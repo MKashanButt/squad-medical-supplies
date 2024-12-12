@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className={`${styles.container} container`}>
                     <div className={styles.company}>
                         <Image src={Logo} alt='Squad Medical Supplies Logo' className={styles.logo} />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro voluptatibus provident atque modi. Aut iste mollitia incidunt est autem.</p>
+                        <p>Our goal at Squad Medical Supplies is to make your life and the lives of those you care easier, healthier, and more comfortable. We are here to offer specialized solutions that support independence and well-being because we recognize the special needs of seniors.</p>
                         <span className={styles.socials}>
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
@@ -44,12 +44,9 @@ export default function Footer() {
                         <nav>
                             <h2>Services</h2>
                             <ul>
-                                <li><Link href='#'>Service #1</Link></li>
-                                <li><Link href='#'>Service #2</Link></li>
-                                <li><Link href='#'>Service #3</Link></li>
-                                <li><Link href='#'>Service #4</Link></li>
-                                <li><Link href='#'>Service #5</Link></li>
-                                <li><Link href='#'>Service #6</Link></li>
+                                <li><Link href='/dme-equipments'>DME Equipments</Link></li>
+                                <li><Link href='/health-plans'>Healthplans</Link></li>
+                                <li><Link href='/caregivers'>Caregivers</Link></li>
                             </ul>
                         </nav>
                         <nav>
