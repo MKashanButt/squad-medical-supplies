@@ -13,8 +13,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import HeroSlideOne from "@/assets/images/hero-slider-one.png"
-import HeroSlideTwo from "@/assets/images/hero-slider-three.png"
-import HeroSlideThree from "@/assets/images/hero-slider-two.png"
+import HeroSlideTwo from "@/assets/images/hero-slider-two.png"
+import HeroSlideThree from "@/assets/images/hero-slider-three.png"
 
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
