@@ -213,7 +213,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <ProductSlider heading="Products" data={data} />
+      <ProductSlider heading="Trending Products" data={data} />
       <section className={styles.stats}>
         <span>At Squad Medical Supplies</span>
         <h2>Our Stats</h2>
