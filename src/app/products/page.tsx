@@ -168,8 +168,8 @@ export default function Products() {
         <main>
             <section className={styles.hero}>
                 <div className={styles.content}>
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati impedit dignissimos sit! Eaque tempore ducimus accusantium, reprehenderit tenetur sint voluptas.</p>
+                    <h1>Empowering Lives with Trusted Care Solutions</h1>
+                    <p>Discover a wide range of products designed to support your health, comfort, and independence. At Squad Medical Supplies, we carefully select premium DME products tailored to meet your unique needs. From mobility aids to advanced monitoring devices, every item reflects our commitment to enhancing your quality of life with care you can trust.</p>
                 </div>
                 <Image src={HeroImage} alt="group of doctors" />
             </section>
@@ -196,32 +196,32 @@ export default function Products() {
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Pump</span>
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
+                        <h3>Enhance Comfort with Lymphedema Pumps!</h3>
+                        <p>Experience relief and comfort with our trusted lymphedema pump massagers—designed for your well-being.</p>
                     </div>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Braces</span>
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
+                        <h3>Support Your Movement with Premium Braces!</h3>
+                        <p>Find the perfect brace for enhanced stability and comfort, designed to support your active lifestyle.</p>
                     </div>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Mobility</span>
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
+                        <h3>Gain Independence with Our Mobility Aids!</h3>
+                        <p>Explore our range of wheelchairs and mobility solutions for effortless movement and ultimate freedom.</p>
                     </div>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Tens Unit</span>
-                        <h3>Lorem ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, nemo!</p>
+                        <h3>Relieve Pain with Our TENS Units!</h3>
+                        <p>Experience effective pain relief and muscle relaxation with our advanced TENS units, designed for comfort.</p>
                     </div>
                 </div>
             </section>
