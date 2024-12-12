@@ -190,7 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`${styles.promotion} container`} id="topProducts">
+      {/* <section className={`${styles.promotion} container`} id="topProducts">
         <h2>Our Top 3 Helping Products</h2>
         <div className={styles.stage}>
           <div className={styles.item} id="dialogBraces">
@@ -212,7 +212,7 @@ export default function Home() {
             <button onClick={() => toggleDialog('braces')}>Get Your Product Now</button>
           </div>
         </div>
-      </section>
+      </section> */}
       <ProductSlider heading="Products" data={data} />
       <section className={styles.stats}>
         <span>At Squad Medical Supplies</span>
