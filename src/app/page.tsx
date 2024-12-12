@@ -114,9 +114,9 @@ export default function Home() {
           <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
             <Image src={HeroSlideOne} alt="" className={styles.image} />
           </SwiperSlide>
-          {/* <SwiperSlide className={styles.slide}>
+          <SwiperSlide className={styles.slide}>
             <Image src={HeroSlideTwo} alt="" className={styles.image} />
-          </SwiperSlide> */}
+          </SwiperSlide>
           <SwiperSlide className={`${styles.slide} ${styles.slideLast}`}>
             <Image src={HeroSlideThree} alt="" className={styles.image} />
           </SwiperSlide>
