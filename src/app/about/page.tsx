@@ -10,6 +10,9 @@ import humana from "@/assets/images/humana-insurance.jpg"
 import aetna from "@/assets/images/aetna-insurance.png"
 import cigna from "@/assets/images/cigna-insurance.jpg"
 import uhc from "@/assets/images/uhc-insurance.jpg"
+import bcbs from "@/assets/images/bcbs-insurance.png"
+import clover from "@/assets/images/clover-insurance.png"
+import medicare from "@/assets/images/medicare-insurance.png"
 
 import KneeBraces from "@/assets/images/knee-braces.jpg"
 import BraceSleves from "@/assets/images/brace-sleves.jpg"
@@ -266,11 +269,32 @@ export default function About() {
                     )}
                     {activeTabs === 'healthcare' && (
                         <div className={`${styles.info} ${styles.healthcareInfo}`}>
-                            <Image src={wellcare} alt="wellcare-insurance-logo" className={styles.item} />
-                            <Image src={humana} alt="humana-insurance-logo" className={styles.item} />
-                            <Image src={aetna} alt="aetna-insurance-logo" className={styles.item} />
-                            <Image src={cigna} alt="cigna-insurance-logo" className={styles.item} />
-                            <Image src={uhc} alt="uhc-insurance-logo" className={styles.item} />
+                            <div className={styles.stage}>
+                                <div className={styles.item}>
+                                    <Image src={wellcare} alt="wellcare-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={humana} alt="humana-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={aetna} alt="aetna-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={cigna} alt="cigna-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={uhc} alt="uhc-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={bcbs} alt="bcbs-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={clover} alt="clover-insurance-logo" />
+                                </div>
+                                <div className={styles.item}>
+                                    <Image src={medicare} alt="medicare-insurance-logo" className={styles.molinaLogo} />
+                                </div>
+                            </div>
                         </div>
                     )}
                     {activeTabs === 'caregiver' && (
