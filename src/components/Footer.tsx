@@ -1,7 +1,7 @@
 import styles from '@/assets/css/components/Footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo from "@/assets/images/logo-white.png"
+import Logo from "@/assets/images/logo.png"
 
 export default function Footer() {
     return (
