@@ -95,39 +95,41 @@ export default function dmeEquipments() {
                 <div className={styles.overlay}></div>
                 <div className={styles.content}>
                     <span>Services</span>
-                    <h1>DME Equipments</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci laborum dicta nihil tempore, cum, unde quia numquam quam omnis doloremque nulla. Et velit ipsa repellendus eos impedit, dicta vero minima voluptates optio quis maiores. Delectus eligendi laudantium suscipit itaque.</p>
+                    <h1>Strengthen Health with DME Equipments</h1>
+                    <p>Discover high-end hospital-grade products like TENS units, wheelchairs, knee braces, UVB light wands, and CGM monitors, among others. You may manage medical issues more easily with our DME solutions, which are made to provide the best possible comfort and support. Increase the flexibility, mobility, and standard of living for yourself or your loved ones.</p>
                 </div>
             </section>
             <section className={`${styles.whyGetDmeServies} container`}>
                 <div className={styles.content}>
-                    <h2><hr />Why Get DME Equipments?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit repudiandae molestias nihil quaerat aliquid iure tenetur ipsam, earum facilis autem odit maiores possimus nesciunt culpa in soluta dolore molestiae quibusdam asperiores ut corporis. Eos, fugiat laboriosam! Blanditiis, iure obcaecati.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit repudiandae molestias nihil quaerat aliquid iure tenetur ipsam, earum facilis autem odit maiores possimus nesciunt culpa in soluta dolore molestiae quibusdam asperiores ut corporis. Eos, fugiat laboriosam! Blanditiis, iure obcaecati.</p>
+                    <h2><hr />Why Get Durable Medical Equipment Equipments?</h2>
+                    <p>Durable Medical Equipment (DME) enhances the lives of individuals managing chronic conditions, recovering from injuries, or seeking greater independence. Brace sleeves, hip braces, and knee braces are among the products that offer essential support for joint stability and mobility. Wheelchairs guarantee dependable mobility and independence for health management, while CGM monitors enable accurate glucose tracking.</p>
+                    <p>
+                        Solutions such as TENS units for pain management and UVB light wands for light therapy are used to address therapeutic needs. DME is crucial for enhancing comfort, mobility, and general well-being because lymphedema pump massagers also encourage circulation and lessen swelling.
+                    </p>
                     <div className={styles.stage}>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>Enhance Mobility and Independence</h3>
+                            <p>For individualized care, use hospital-grade equipment from the comfort of your home, such as TENS units, wheelchairs, UVB light wands, knee and hip braces, brace sleeves, CGM monitors, and lymphedema pump massagers.</p>
                         </div>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>Cost-Effective with Insurance Coverage</h3>
+                            <p>The majority of DME devices are covered by insurance plans, which increases patient access to and affordability of necessary medical equipment.</p>
                         </div>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>Tailored to Your Medical Needs</h3>
+                            <p>Every product we provide has been recommended and authorized by medical professionals, guaranteeing that it satisfies your particular medical needs.</p>
                         </div>
                     </div>
                 </div>
@@ -190,36 +192,36 @@ export default function dmeEquipments() {
                 </div>
                 <div className={styles.content}>
                     <h2><hr />Some Key Benefits</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi dolore qui eligendi asperiores doloribus necessitatibus porro perferendis dolor ipsum itaque sapiente eum ea placeat est, veritatis ex provident animi. Similique accusantium perferendis necessitatibus vel nobis vitae. Eos, delectus eaque.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi dolore qui eligendi asperiores doloribus necessitatibus porro perferendis dolor ipsum itaque sapiente eum ea placeat est, veritatis ex provident animi. Similique accusantium perferendis necessitatibus vel nobis vitae. Eos, delectus eaque.</p>
+                    <p>For those managing a variety of medical conditions, durable medical equipment (DME) is specifically made to promote comfort, improve health, and offer dependable assistance. These goods support people in preserving their functioning and independence, both of which are necessary for living an active, satisfying life.</p>
+                    <p>DME, which includes anything from mobility assistance to therapeutic devices, is essential for enhancing quality of life and fostering improved health outcomes. DME provides the resources people need to live more comfortably, confidently, and peacefully, whether they are recuperating from surgery, managing a chronic illness, or looking for more mobility.</p>
                     <ul>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Restore Mobility and Independence
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Improve Overall Quality of Life
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Convenient At-Home Care
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Cost-Efficient with Insurance Coverage
                         </li>
                     </ul>
                 </div>
