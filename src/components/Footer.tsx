@@ -55,7 +55,6 @@ export default function Footer() {
                                 <li><Link href='#'>Blogs</Link></li>
                                 <li><Link href='#'>Industry News</Link></li>
                                 <li><Link href='#'>Covid 19</Link></li>
-                                <li><Link href='#'>Service #4</Link></li>
                             </ul>
                         </nav>
                     </div>
