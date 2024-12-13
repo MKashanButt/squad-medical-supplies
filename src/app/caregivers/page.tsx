@@ -17,40 +17,40 @@ export default function caregivers() {
                 <Image src={hero} alt="dme-equipment-hero" />
                 <div className={styles.overlay}></div>
                 <div className={styles.content}>
-                    <span>Services</span>
-                    <h1>Caregivers</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci laborum dicta nihil tempore, cum, unde quia numquam quam omnis doloremque nulla. Et velit ipsa repellendus eos impedit, dicta vero minima voluptates optio quis maiores. Delectus eligendi laudantium suscipit itaque.</p>
+                    <span>Service</span>
+                    <h1>Individualized Home Care</h1>
+                    <p>At Squad Medical Supplies, we offer qualified caregivers that provide people with individualized, compassionate care in the convenience of their own homes. Whether it's help with everyday tasks or specialist care for medical needs, our caregivers are committed to making sure your loved ones have the support they need to live a comfortable and independent life.</p>
                 </div>
             </section>
             <section className={`${styles.whyGetDmeServies} container`}>
                 <div className={styles.content}>
-                    <h2><hr />Why Get A Caregiver?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit repudiandae molestias nihil quaerat aliquid iure tenetur ipsam, earum facilis autem odit maiores possimus nesciunt culpa in soluta dolore molestiae quibusdam asperiores ut corporis. Eos, fugiat laboriosam! Blanditiis, iure obcaecati.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit repudiandae molestias nihil quaerat aliquid iure tenetur ipsam, earum facilis autem odit maiores possimus nesciunt culpa in soluta dolore molestiae quibusdam asperiores ut corporis. Eos, fugiat laboriosam! Blanditiis, iure obcaecati.</p>
+                    <h2><hr />Why Get a Caregiver to Help You Around the House?</h2>
+                    <p>We at Squad Medical Supplies are proud to provide competent, caring caregivers who offer individualized care in the convenience of your own home. Our caregivers are committed to making sure you or your loved ones get the help they require to continue living a high-quality life.</p>
+                    <p>Our caregivers are prepared to provide outstanding care that is customized to meet your needs, whether you need assistance with everyday tasks or more specific medical attention. We ensure that you can live freely and with peace of mind by emphasizing comfort and dignity.</p>
                     <div className={styles.stage}>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>Cost-Effective In-Home Care</h3>
+                            <p>In-home caregiving services are sometimes less expensive than assisted living facilities and offer professional care without the hassle of leaving your cozy surroundings.</p>
                         </div>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>Relief for Family Members</h3>
+                            <p>Caregivers lessen the load on family members, allowing them to focus on spending time with their loved ones instead of taking care of caregiving responsibilities.</p>
                         </div>
                         <div className={styles.item}>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
                             </svg>
-                            <h3>Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus voluptatem deserunt provident adipisci magni similique expedita perferendis ullam doloremque.</p>
+                            <h3>At-Home Physiotherapy Support</h3>
+                            <p>Our trained caregivers help with physical therapy exercises, mobility management, building physical strength, and aiding in the healing process from injuries at your home.</p>
                         </div>
                     </div>
                 </div>
@@ -111,46 +111,47 @@ export default function caregivers() {
                     <Image src={whyChooseUs} alt="why-choose-us" />
                 </div>
                 <div className={styles.content}>
-                    <h2><hr />Some Key Benefits</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi dolore qui eligendi asperiores doloribus necessitatibus porro perferendis dolor ipsum itaque sapiente eum ea placeat est, veritatis ex provident animi. Similique accusantium perferendis necessitatibus vel nobis vitae. Eos, delectus eaque.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi dolore qui eligendi asperiores doloribus necessitatibus porro perferendis dolor ipsum itaque sapiente eum ea placeat est, veritatis ex provident animi. Similique accusantium perferendis necessitatibus vel nobis vitae. Eos, delectus eaque.</p>
+                    <h2><hr />A Few Advantages</h2>
+                    <p>At Squad Medical Supplies, we offer compassionate and skilled caregivers who provide personalized care at home. Our caregivers are dedicated to ensuring that you or your loved ones receive the necessary support for comfortable living, whether it’s assistance with daily tasks or specialized medical care.</p>
+                    <p>We understand the importance of dignity and independence, and our caregivers are trained to meet your specific needs. Whether you require help with personal care, medication management, or companionship, we ensure a tailored approach to improve overall well-being and quality of life.</p>
                     <ul>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Personalized Care for Your Loved Ones
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Improve Comfort and Independence at Home
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Experienced and Compassionate Caregivers
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
                                 <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32" />
                                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 192L256.13 320l-47.95-48M191.95 320L144 272M305.71 192l-51.55 59" />
                             </svg>
-                            Lorem ipsum dolor sit amet.
+                            Affordable Care with Insurance Support
                         </li>
                     </ul>
                 </div>
+
             </section>
             <section className={styles.cta}>
                 <Image src={cta} alt="caregivers-cta-image" />
                 <div className={styles.overlay}></div>
                 <span>Stay Healthy. Find a Caregiver</span>
-                <h2>Lorem Ipsum Dior</h2>
+                <h2>Your Health is our top priority.</h2>
                 <button>Find A Caregiver</button>
             </section>
             <Reviews />
