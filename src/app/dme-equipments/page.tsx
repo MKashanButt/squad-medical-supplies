@@ -94,7 +94,7 @@ export default function dmeEquipments() {
                 <Image src={hero} alt="dme-equipment-hero" />
                 <div className={styles.overlay}></div>
                 <div className={styles.content}>
-                    <span>Services</span>
+                    <span>Service</span>
                     <h1>Strengthen Health with DME Equipments</h1>
                     <p>Discover high-end hospital-grade products like TENS units, wheelchairs, knee braces, UVB light wands, and CGM monitors, among others. You may manage medical issues more easily with our DME solutions, which are made to provide the best possible comfort and support. Increase the flexibility, mobility, and standard of living for yourself or your loved ones.</p>
                 </div>
