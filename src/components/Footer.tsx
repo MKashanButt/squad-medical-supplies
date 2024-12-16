@@ -51,7 +51,7 @@ export default function Footer() {
                         <nav>
                             <h2>Resources</h2>
                             <ul>
-                                <li><Link href='#'>Blogs</Link></li>
+                                <li><Link href='/bogs'>Blogs</Link></li>
                                 <li><Link href='#'>Industry News</Link></li>
                                 <li><Link href='#'>Covid 19</Link></li>
                             </ul>
