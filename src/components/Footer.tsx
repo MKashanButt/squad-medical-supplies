@@ -52,7 +52,7 @@ export default function Footer() {
                             <h2>Resources</h2>
                             <ul>
                                 <li><Link href='/blogs'>Blogs</Link></li>
-                                <li><Link href='/covid-19'>Covid 19</Link></li>
+                                <li><Link href='/blogs/covid-19'>Covid 19</Link></li>
                             </ul>
                         </nav>
                     </div>
