@@ -3,7 +3,7 @@ import styles from '@/assets/css/Blog.module.css';
 import hero from "@/assets/images/blog-hero.jpg";
 import Image from 'next/image';
 
-export default function Blog() {
+export default function Blogs() {
     return (
         <main>
             <section className={styles.hero}>
