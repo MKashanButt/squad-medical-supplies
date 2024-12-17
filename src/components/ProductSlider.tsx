@@ -16,13 +16,13 @@ import UvbLightWands from "@/assets/images/uvb-light-wands.jpg"
 import HipBraces from "@/assets/images/hip-braces.jpg"
 import TenseUnit from "@/assets/images/tense-unit.jpg"
 import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.jpg"
+import { toggleDialog } from "@/utils/DialogHelper";
 
 interface Product {
     id: number;
     image: string;
     title: string;
     description: string;
-    link: string;
 }
 
 interface SliderProps {
@@ -55,14 +55,12 @@ export default function ProductSlider({ heading, data }: SliderProps) {
                 loop
             >
                 {data.map((item) => (
-                    <SwiperSlide key={item.id} className={styles.item}>
-                        <a href={item.link}>
-                            <div className={styles.image}>
-                                <Image src={item.image} alt={item.title} />
-                            </div>
-                            <h3>{item.title}</h3>
-                            <p>{item.description}</p>
-                        </a>
+                    <SwiperSlide key={item.id} className={styles.item} onClick={() => toggleDialog('braces')}>
+                        <div className={styles.image}>
+                            <Image src={item.image} alt={item.title} />
+                        </div>
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
                     </SwiperSlide>
                 ))}
             </Swiper>

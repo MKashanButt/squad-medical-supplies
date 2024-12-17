@@ -192,7 +192,7 @@ export default function Products() {
                 </button>
             </form>
             <section className={`${styles.promotion} container`}>
-                <div className={styles.item}>
+                <div className={styles.item} onClick={() => toggleDialog('braces')}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Pump</span>
@@ -200,7 +200,7 @@ export default function Products() {
                         <p>Experience relief and comfort with our trusted lymphedema pump massagers—designed for your well-being.</p>
                     </div>
                 </div>
-                <div className={styles.item}>
+                <div className={styles.item} onClick={() => toggleDialog('braces')}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Braces</span>
@@ -208,7 +208,7 @@ export default function Products() {
                         <p>Find the perfect brace for enhanced stability and comfort, designed to support your active lifestyle.</p>
                     </div>
                 </div>
-                <div className={styles.item}>
+                <div className={styles.item} onClick={() => toggleDialog('braces')}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Mobility</span>
@@ -216,7 +216,7 @@ export default function Products() {
                         <p>Explore our range of wheelchairs and mobility solutions for effortless movement and ultimate freedom.</p>
                     </div>
                 </div>
-                <div className={styles.item}>
+                <div className={styles.item} onClick={() => toggleDialog('braces')}>
                     <div className={styles.overlay}></div>
                     <div className={styles.content}>
                         <span>Tens Unit</span>

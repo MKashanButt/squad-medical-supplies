@@ -9,6 +9,7 @@ import cta from "@/assets/images/caregivers-cta.jpg"
 import hero from "@/assets/images/caregivers-hero.png"
 import whyGetCaregiver from "@/assets/images/whyGetCaregiver.png"
 import whyChooseUs from "@/assets/images/whychooseus.png"
+import { toggleDialog } from "@/utils/DialogHelper"
 
 export default function caregivers() {
     return (
@@ -152,34 +153,9 @@ export default function caregivers() {
                 <div className={styles.overlay}></div>
                 <span>Stay Healthy. Find a Caregiver</span>
                 <h2>Your Health is our top priority.</h2>
-                <button>Find A Caregiver</button>
+                <button onClick={() => toggleDialog('braces')}>Find A Caregiver</button>
             </section>
             <Reviews />
-            <section className={`${styles.someOtherServices} container`}>
-                <div className={styles.content}>
-                    <h2><hr />Some of Our Other Services</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis facilis dignissimos repudiandae consequuntur non, quod eos. Ipsam sunt beatae modi nemo, voluptates dolores impedit adipisci culpa distinctio qui veritatis deserunt doloremque, hic itaque quos quisquam. Quisquam harum ratione nihil, dolor dolores ex ducimus laboriosam doloribus cum repellendus pariatur error eveniet!</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis facilis dignissimos repudiandae consequuntur non, quod eos. Ipsam sunt beatae modi nemo, voluptates dolores impedit adipisci culpa distinctio qui veritatis deserunt doloremque, hic itaque quos quisquam. Quisquam harum ratione nihil, dolor dolores ex ducimus laboriosam doloribus cum repellendus pariatur error eveniet!</p>
-                </div>
-                <div className={styles.services}>
-                    <div className={styles.item}>
-                        {/* <Image/> */}
-                        <div className={styles.overlay}></div>
-                        <div className={styles.content}>
-                            <h3>DME Equipments</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, id molestiae. Eligendi nulla magnam quaerat laborum doloribus quasi dicta vero!</p>
-                        </div>
-                    </div>
-                    <div className={styles.item}>
-                        {/* <Image/> */}
-                        <div className={styles.overlay}></div>
-                        <div className={styles.content}>
-                            <h3>Healthplans</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, id molestiae. Eligendi nulla magnam quaerat laborum doloribus quasi dicta vero!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
     )
 }

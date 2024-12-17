@@ -112,7 +112,9 @@ export default function Home() {
           loop
         >
           <SwiperSlide className={`${styles.slide} ${styles.slideOne}`}>
-            <Image src={HeroSlideOne} alt="" className={styles.image} />
+            <Link href="/about">
+              <Image src={HeroSlideOne} alt="" className={styles.image} />
+            </Link>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
             <Image src={HeroSlideTwo} alt="" className={styles.image} />
@@ -126,11 +128,13 @@ export default function Home() {
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M328 112L184 256l144 144" />
               </svg>
             </button>
-            <button ref={navigationNextRef}>
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M184 112l144 144-144 144" />
-              </svg>
-            </button>
+            <Link href="/about">
+              <button ref={navigationNextRef}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M184 112l144 144-144 144" />
+                </svg>
+              </button>
+            </Link>
           </div>
         </Swiper>
       </section>
@@ -272,9 +276,11 @@ export default function Home() {
           <p>Our goal at Squad Medical Supplies is to make your life and the lives of those you care easier, healthier, and more comfortable. We are here to offer specialized solutions that support independence and well-being because we recognize the special needs of seniors. We are committed to helping you at every stage of your path to better living, whether that means providing you with knowledgeable advice on insurance and health plans or kind caregivers who treat you like family.</p>
           <p>We are proud to provide a wide selection of Durable Medical Equipment (DME) that is intended to improve your quality of life. Our products, which range from wheelchairs and lymphedema pump massagers to knee braces and CGM monitors, are carefully chosen for their dependability and efficacy. Squad Medical Supplies makes certain that each item satisfies your particular requirements, delivering ease, security, and tranquility.</p>
           <p>Our first priorities are your well-being and health. For this reason, we're dedicated to providing individualized care, open guidance, and continuous assistance. You are a member of our family when you work with Squad Medical Supplies, not just a client. Allow us to support you in living with grace, comfort, and the assurance that you have a reliable team on your side.</p>
-          <a href="">
-            <button>Contact Us at +1 (404) 442-2019</button>
-          </a>
+          <button>
+            <Link href="tel:+14044422019">
+              Contact Us at +1 (404) 442-2019
+            </Link>
+          </button>
         </div>
       </section>
       <section className={`${styles.insurances} container`}>
@@ -314,7 +320,11 @@ export default function Home() {
             <h2>Need Help?</h2>
             <p>Get in touch now and get free consultation</p>
           </div>
-          <button className="primary">+1 (404) 442-2019</button>
+          <button className="primary">
+            <Link href="tel:+14044422019">
+              +1 (404) 442-2019
+            </Link>
+          </button>
         </div>
       </section>
       <PopupForm id="braces" onClose={() => closeDialog("braces")} />

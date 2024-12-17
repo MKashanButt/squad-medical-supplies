@@ -135,7 +135,7 @@ export default function About() {
                 </div>
             </section>
             <section className={`${styles.missionVision} container`}>
-                <h2>Lorem Ipsum</h2>
+                <h2>About Squad Medical Supplies</h2>
                 <p>Squad Medical Supplies has led the way in offering patients around the US premium, long-lasting medical equipment (DME) since our establishment in 2020. We have successfully treated over 4,700 patients countrywide, assisting them in managing chronic ailments, recovering from injuries, and increasing their mobility and quality of life via our unwavering dedication to enhancing patient care and fostering general well-being.</p>
                 <p>From continuous glucose monitors (CGMs) to orthopedic braces, our wide choice of DME products is made to fit the individual demands of every patient, guaranteeing that they get the correct equipment at the right time. We collaborate with leading insurance companies, such as Aetna, Cigna, BCBS, and UHC, to provide cost-effective options that are covered by the majority of health plans, facilitating patients' access to necessary medical equipment without putting a pressure on their finances.</p>
                 <div className={styles.stage}>
@@ -287,7 +287,11 @@ export default function About() {
                         <h2>Need Help?</h2>
                         <p>Get in touch now and get free consultation</p>
                     </div>
-                    <button className="primary">+1 (404) 442-2019</button>
+                    <button className="primary">
+                        <Link href="tel:+14044422019">
+                            +1 (404) 442-2019
+                        </Link>
+                    </button>
                 </div>
             </section>
         </main >
