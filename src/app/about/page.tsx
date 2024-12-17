@@ -25,6 +25,8 @@ import LymphedemaPumpMassagers from "@/assets/images/lymphedema-pump-massagers.j
 import shopping from "@/assets/images/shoppping-icon.png"
 
 import caregiverService from "@/assets/images/caregiver-service-info.jpg"
+import Link from "next/link"
+import { toggleDialog } from "@/utils/DialogHelper"
 
 interface Product {
     id: number,
@@ -95,7 +97,7 @@ export default function About() {
             <section className={styles.hero}>
                 <div className={styles.overlay}></div>
                 <div className={styles.content}>
-                    <h1>Accompanying you through <span>Thick & Thin</span></h1>
+                    <h1>Guiding You Through <br /><span>Every Stage</span></h1>
                 </div>
                 <div className={styles.overlayContent}>
                     <div className={styles.item}>
@@ -109,7 +111,7 @@ export default function About() {
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="32" d="M88 176v112M144 232H32" />
                         </svg>
-                        <h3>Experience of 5+ years</h3>
+                        <h3>Experience of 4+ years</h3>
                     </div>
                     <div className={styles.item}>
                         <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
@@ -119,7 +121,7 @@ export default function About() {
                                 stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="32" />
                         </svg>
-                        <h3>1100 Patients Cured</h3>
+                        <h3>4700+ Patients Cured</h3>
                     </div>
                     <div className={styles.item}>
                         <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
@@ -134,8 +136,8 @@ export default function About() {
             </section>
             <section className={`${styles.missionVision} container`}>
                 <h2>Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et facere eius iure laudantium? Beatae possimus asperiores ullam dolorem accusamus itaque quaerat accusantium quia? Ducimus, quas. Similique nostrum cupiditate laboriosam, consequatur obcaecati aspernatur sunt tempora excepturi ab omnis quaerat praesentium amet debitis sit, enim minus fuga voluptate harum ipsa aut ducimus. Voluptatibus id dicta molestiae temporibus aperiam harum cum impedit?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et facere eius iure laudantium? Beatae possimus asperiores ullam dolorem accusamus itaque quaerat accusantium quia? Ducimus, quas. Similique nostrum cupiditate laboriosam, consequatur obcaecati aspernatur sunt tempora excepturi ab omnis quaerat praesentium amet debitis sit, enim minus fuga voluptate harum ipsa aut ducimus. Voluptatibus id dicta molestiae temporibus aperiam harum cum impedit?</p>
+                <p>Squad Medical Supplies has led the way in offering patients around the US premium, long-lasting medical equipment (DME) since our establishment in 2020. We have successfully treated over 4,700 patients countrywide, assisting them in managing chronic ailments, recovering from injuries, and increasing their mobility and quality of life via our unwavering dedication to enhancing patient care and fostering general well-being.</p>
+                <p>From continuous glucose monitors (CGMs) to orthopedic braces, our wide choice of DME products is made to fit the individual demands of every patient, guaranteeing that they get the correct equipment at the right time. We collaborate with leading insurance companies, such as Aetna, Cigna, BCBS, and UHC, to provide cost-effective options that are covered by the majority of health plans, facilitating patients' access to necessary medical equipment without putting a pressure on their finances.</p>
                 <div className={styles.stage}>
                     <div className={styles.item}>
                         <svg xmlns="http://www.w3.org/2000/svg" className={styles.icon} viewBox="0 0 512 512">
@@ -143,8 +145,10 @@ export default function About() {
                             <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                         </svg>
                         <div className={styles.content}>
-                            <h3>Mission</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima nemo optio dolor soluta ipsam cupiditate expedita repellat necessitatibus quibusdam!</p>
+                            <h3>Our Mission</h3>
+                            <p>Our goal at Squad Medical Supplies is to improve patients' quality of life by making high-quality, long-lasting medical equipment easily accessible. Regardless of geography or medical condition, we think all patients should have access to the resources they need to take control of their health and live freely.</p>
+                            <p>By facilitating easy access to items that cater to each patient's unique needs, we hope to streamline the healthcare experience. Whether it's a continuous glucose monitor for diabetes control or an orthopedic brace for injury recovery, we ensure that every product is prescribed, authorized, and delivered with care.</p>
+                            <p>Our goal is to ensure that our patients receive the finest care possible without needless obstacles or hassles by bridging the gap between insurance companies, patients, and healthcare providers.</p>
                         </div>
                     </div>
                     <div className={styles.item}>
@@ -153,22 +157,24 @@ export default function About() {
                             <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                         </svg>
                         <div className={styles.content}>
-                            <h3>Vision</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima nemo optio dolor soluta ipsam cupiditate expedita repellat necessitatibus quibusdam!</p>
+                            <h3>Our Vision</h3>
+                            <p>Our goal is to become the top supplier of long-lasting medical equipment in the US, renowned for our creativity, attention to detail, and dedication to accessibility. By offering smooth and reasonably priced solutions that simplify, expedite, and improve healthcare, we hope to revolutionize the way individuals get medical equipment.</p>
+                            <p>In order to help patients lead better lives, we hope to improve our services and increase the range of products we provide as we grow. In the future, Squad Medical Supplies will be known for its commitment to enhancing patient outcomes by providing superior, patient-centered care.</p>
+                            <p>Our mission is based on the conviction that everyone should have access to healthcare and that everyone has a right to the medical supplies they require in order to survive. By providing goods and services that enable our clients to live comfortably and independently while negotiating the difficulties of insurance coverage and medical needs, we hope to establish ourselves as a reliable healthcare partner.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section className={`${styles.about} container`}>
                 <div className={styles.content}>
-                    <h2>Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit laborum illo iure iusto ullam dignissimos modi dolor consectetur aut ab eligendi atque earum autem harum illum sequi dolore, eaque nemo? Explicabo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit laborum illo iure iusto ullam dignissimos modi dolor consectetur aut ab eligendi atque earum autem harum illum sequi dolore, eaque nemo? Explicabo.</p>
+                    <h2>What Sets Us Apart?</h2>
+                    <p>Our dedication to quality and patient happiness is at the core of our offerings. We guarantee accessibility no matter where you are thanks to our large countrywide network. Our wide selection of superior items is made to accommodate different demands and provide useful solutions that genuinely have an impact.</p>
+                    <p>We are aware of how complicated healthcare may be, we provide our clients professional help with insurance coverage, which makes the process easier and less stressful. Above all, we continue to prioritize patient-centered care, guaranteeing individualized attention and steadfast support at every stage. We are a reliable partner in your healthcare journey because of these beliefs, which set us apart.</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Nationwide Reach.</li>
+                        <li>A Wide Variety of Products.</li>
+                        <li>Assistance with Insurance Coverage.</li>
+                        <li>Patient-Centered Treatment.</li>
                     </ul>
                 </div>
                 <div className={styles.image}>
@@ -236,15 +242,7 @@ export default function About() {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64844 2.75C2.64844 2.33579 2.98422 2 3.39844 2H4.89844C6.14108 2 7.14844 3.00736 7.14844 4.25V6.375H16.1484C17.3911 6.375 18.3984 7.38236 18.3984 8.625V17.378C18.9068 17.5577 19.3312 17.9148 19.5974 18.375H21.2734C21.6877 18.375 22.0234 18.7108 22.0234 19.125C22.0234 19.5392 21.6877 19.875 21.2734 19.875H19.8673C19.6888 20.9391 18.7633 21.75 17.6484 21.75C16.4058 21.75 15.3984 20.7426 15.3984 19.5C15.3984 18.5203 16.0245 17.6869 16.8984 17.378V13.1304H13.7791C14.1715 13.9428 14.3915 14.8541 14.3915 15.8169C14.3915 19.2322 11.6228 22.0009 8.20748 22.0009C4.79213 22.0009 2.02344 19.2322 2.02344 15.8169C2.02344 13.3142 3.51008 11.1588 5.64844 10.1855V4.25C5.64844 3.83579 5.31265 3.5 4.89844 3.5H3.39844C2.98422 3.5 2.64844 3.16421 2.64844 2.75ZM7.14844 9.72314C7.49255 9.66376 7.8464 9.63281 8.20748 9.63281C10.008 9.63281 11.6288 10.4023 12.759 11.6304H16.8984V8.625C16.8984 8.21079 16.5627 7.875 16.1484 7.875H7.14844V9.72314ZM8.20748 11.1328C5.62056 11.1328 3.52344 13.2299 3.52344 15.8169C3.52344 18.4038 5.62056 20.5009 8.20748 20.5009C10.7944 20.5009 12.8915 18.4038 12.8915 15.8169C12.8915 13.2299 10.7944 11.1328 8.20748 11.1328ZM16.8984 19.5C16.8984 19.0858 17.2342 18.75 17.6484 18.75C18.0627 18.75 18.3984 19.0858 18.3984 19.5C18.3984 19.9142 18.0627 20.25 17.6484 20.25C17.2342 20.25 16.8984 19.9142 16.8984 19.5Z" />
                             </svg>
                             <h3>DME Equipment</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, natus?</p>
-                        </div>
-                        <div className={`${styles.item} ${activeTabs == 'healthcare' ? styles.active : ''}`} onClick={() => setActiveTabs('healthcare')}>
-                            <svg width="40" height="40" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg" className={styles.icon}>
-                                <path d="M12.0231 8.55941C11.6089 8.55941 11.2731 8.8952 11.2731 9.30941V11.9999H8.58266C8.16845 11.9999 7.83266 12.3357 7.83266 12.7499C7.83266 13.1641 8.16845 13.4999 8.58266 13.4999H11.2731V16.1909C11.2731 16.6051 11.6089 16.9409 12.0231 16.9409C12.4373 16.9409 12.7731 16.6051 12.7731 16.1909V13.4999H15.4641C15.8783 13.4999 16.2141 13.1641 16.2141 12.7499C16.2141 12.3357 15.8783 11.9999 15.4641 11.9999H12.7731V9.30941C12.7731 8.8952 12.4373 8.55941 12.0231 8.55941Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77344 5.25C7.77344 4.00736 8.7808 3 10.0234 3H14.0234C15.2661 3 16.2734 4.00736 16.2734 5.25V6H19.2736C20.5163 6 21.5236 7.00736 21.5236 8.25V17.25C21.5236 18.4926 20.5163 19.5 19.2736 19.5H4.77344C3.5308 19.5 2.52344 18.4926 2.52344 17.25V8.25C2.52344 7.00736 3.5308 6 4.77344 6H7.77344V5.25ZM14.7734 5.25V6H9.27344V5.25C9.27344 4.83579 9.60922 4.5 10.0234 4.5H14.0234C14.4377 4.5 14.7734 4.83579 14.7734 5.25ZM4.77344 7.5H19.2736C19.6879 7.5 20.0236 7.83579 20.0236 8.25V17.25C20.0236 17.6642 19.6879 18 19.2736 18H4.77344C4.35922 18 4.02344 17.6642 4.02344 17.25V8.25C4.02344 7.83579 4.35922 7.5 4.77344 7.5Z" />
-                            </svg>
-                            <h3>Healthplans</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, natus?</p>
+                            <p>Reliable Solutions, Empowered Living</p>
                         </div>
                         <div className={`${styles.item} ${activeTabs == 'caregiver' ? styles.active : ''}`} onClick={() => setActiveTabs('caregiver')}>
                             <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className={styles.icon}>
@@ -253,57 +251,27 @@ export default function About() {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0944 6.27857C12.8582 6.27857 11.856 7.28072 11.856 8.51694V9.44718C11.856 9.86139 12.1918 10.1972 12.606 10.1972H18.0111C18.4253 10.1972 18.7611 9.86139 18.7611 9.44718V8.51694C18.7611 7.28072 17.7589 6.27857 16.5227 6.27857H14.0944ZM13.356 8.51694C13.356 8.10915 13.6866 7.77857 14.0944 7.77857H16.5227C16.9305 7.77857 17.2611 8.10915 17.2611 8.51694V8.69718H13.356V8.51694Z" />
                             </svg>
                             <h3>Caregivers</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, natus?</p>
+                            <p>Assisting Those Who Are Most Important</p>
                         </div>
                     </div>
 
                     {activeTabs === 'dme' && (
                         <div className={`${styles.info}`}>
                             {products.map(product => (
-                                <div className={styles.item} key={product.id}>
+                                <div className={styles.item} key={product.id} onClick={() => toggleDialog('braces')}>
                                     <Image src={product.image} alt={`${product.title} image`} />
                                     <h3>{product.title}</h3>
                                 </div>
                             ))}
                         </div>
                     )}
-                    {activeTabs === 'healthcare' && (
-                        <div className={`${styles.info} ${styles.healthcareInfo}`}>
-                            <div className={styles.stage}>
-                                <div className={styles.item}>
-                                    <Image src={wellcare} alt="wellcare-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={humana} alt="humana-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={aetna} alt="aetna-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={cigna} alt="cigna-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={uhc} alt="uhc-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={bcbs} alt="bcbs-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={clover} alt="clover-insurance-logo" />
-                                </div>
-                                <div className={styles.item}>
-                                    <Image src={medicare} alt="medicare-insurance-logo" className={styles.molinaLogo} />
-                                </div>
-                            </div>
-                        </div>
-                    )}
                     {activeTabs === 'caregiver' && (
                         <div className={`${styles.info} ${styles.activeInfo} ${styles.caregiverInfo}`}>
                             <div className={styles.content}>
-                                <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem impedit laboriosam fugiat asperiores earum, consectetur distinctio dignissimos sit molestiae veritatis odit odio dolorum. Explicabo magnam consequuntur saepe repudiandae molestiae nulla cupiditate quas temporibus dignissimos quibusdam consectetur doloremque laborum, praesentium debitis alias placeat enim nesciunt sed illum optio quae, commodi unde harum. Ipsa architecto deserunt quam quo, tempora doloremque incidunt? Esse, totam? Reiciendis esse odit corporis. Rem, saepe nam. Officia obcaecati modi ipsa sequi deleniti quae a, tempore tempora debitis repellendus?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem impedit laboriosam fugiat asperiores earum, consectetur distinctio dignissimos sit molestiae veritatis odit odio dolorum. Explicabo magnam consequuntur saepe repudiandae molestiae nulla cupiditate quas temporibus dignissimos quibusdam consectetur doloremque laborum, praesentium debitis alias placeat enim nesciunt sed illum optio quae, commodi unde harum. Ipsa architecto deserunt quam quo, tempora doloremque incidunt? Esse, totam? Reiciendis esse odit corporis. Rem, saepe nam. Officia obcaecati modi ipsa sequi deleniti quae a, tempore tempora debitis repellendus?</p>
-                                <button className="primary">Get In Touch</button>
+                                <h3>Compassionate Support</h3>
+                                <p>We recognize how important it is to find the best care for your loved ones. Our staff of qualified caregivers is committed to offering individuals in need individualized, empathetic help. We guarantee their comfort, safety, and well-being at every stage, whether we are caring for the elderly, patients with long-term conditions, or those recuperating after medical procedures. Our caregivers are prepared to provide excellent care, including emotional support, health monitoring, and help with everyday tasks. We provide families with the assurance that their loved ones are in skilled and compassionate hands by providing dependable, responsive care.</p>
+                                <p>A strong dedication to improving the quality of life for individuals in need of care is at the core of our offerings. With our customers, our caregivers establish deep connections that promote security and trust. Our staff makes sure that every need is satisfied with expertise and care, from assisting with mobility and cleanliness to handling medication scheduling and food preparation. By emphasizing friendship and emotional well-being, we go above and beyond basic care, providing a kind, personal touch that genuinely makes a difference. We enable people to live comfortably, confidently, and with dignity by providing them with our caring care.</p>
+                                <button className="primary" onClick={() => toggleDialog('braces')}>Get In Touch</button>
                             </div>
                             <div className={styles.image}>
                                 <Image src={caregiverService} alt="" />
