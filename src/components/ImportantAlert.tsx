@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react"
 
 export default function ImportantAlert() {
@@ -10,7 +11,7 @@ export default function ImportantAlert() {
                     <p>Important Information in regard of COVID19</p>
                     <div className="infoButtons">
                         <button onClick={() => setDisplayOption(false)}>Close</button>
-                        <button>Read</button>
+                        <Link href='/blogs/covid-19'><button>Read</button></Link>
                     </div>
                 </div>
             }
