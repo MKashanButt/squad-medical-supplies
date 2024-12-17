@@ -1,8 +1,8 @@
 export function counter(id: string) {
     const count = document.getElementById(id) as HTMLElement;
-    const statesNumber = 5;
-    const experienceNumber = 80;
-    const patientNumber = 1100;
+    const statesNumber = 2;
+    const experienceNumber = 4;
+    const patientNumber = 4700;
     let i = 0;
 
     if (count) {
