@@ -11,7 +11,7 @@ export default function ImportantAlert() {
                     <p>Important Information in regard of COVID19</p>
                     <div className="infoButtons">
                         <button onClick={() => setDisplayOption(false)}>Close</button>
-                        <Link href='/blogs/covid-19'><button>Read</button></Link>
+                        <Link href='/blogs/covid-19'><button onClick={() => setDisplayOption(false)}>Read</button></Link>
                     </div>
                 </div>
             }
