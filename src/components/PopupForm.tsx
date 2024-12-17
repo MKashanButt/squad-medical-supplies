@@ -69,11 +69,7 @@ export default function PopupForm({ id, onClose }: PopupDialogProps) {
                     <div className="field consentField" style={{ alignItems: 'baseline' }}>
                         <input type="checkbox" name="consent" id="consent" />
                         <p>
-                            By tapping the &quot;Submit&quot; button, I expressly endorse healthmed and Backpain Discount
-                            Club, Pain Center to call me or send me recorded messages or messages about their Solid wellbeing,
-                            Diabetic Supplies, or other Clinical things using electronic advancement to my telephone/cell number
-                            I entered already. I understand that I am not supposed to give my consent as a condition of
-                            any purchase.
+                            By tapping the &quot;Submit&quot; button, I expressly endorse Squad Medical Supply to call me or send me recorded messages or messages about their Supplies, or other Clinical things using electronic advancement to my telephone/cell number I entered already. I understand that I am not supposed to give my consent as a condition of any purchase.
                         </p>
                     </div>
                     <button name="submit">See If I Qualify</button>
