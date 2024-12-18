@@ -63,7 +63,7 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-            <p className={styles.copyright}> Copyright Company &#169; Squad Medical Supplies. All Rights Reserved 2020 - {new Date().getFullYear()}</p>
+            <p className={styles.copyright}> Copyright Company &#169; Squad Medical Supplies. All Rights Reserved 2020 - {new Date().getFullYear()} & Content By Ahmed Ayat (Chief Medical Assistant)</p>
         </>
     )
 }
