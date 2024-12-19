@@ -103,7 +103,7 @@ export default function Blogs() {
                                     <p>{blog.content}</p>
                                     {blog.tags.split(',').map(tag => (
                                         tag ??
-                                        <div className={styles.tags}>
+                                        <div className={styles.tags} key={blog.id}>
                                             <button>{tag}</button>
                                             <button>{tag}</button>
                                             <button>{tag}</button>
