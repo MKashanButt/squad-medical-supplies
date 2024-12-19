@@ -3,11 +3,14 @@
     align-items: center;
     justify-content: center;
     height: 70vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero img {
     width: 30%;
     height: 100%;
+    object-fit: cover;
 }
 
 .hero .content {
@@ -21,6 +24,7 @@
 
 .hero .content h1 {
     font-size: 50px;
+    font-weight: bold;
 }
 
 .hero .content hr {
@@ -50,7 +54,7 @@
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 }
@@ -59,17 +63,18 @@
     width: 50%;
     display: flex;
     border: 2px solid var(--yellow);
+    border-radius: 30px;
 }
 
 .blogs form input {
     all: unset;
-    width: 90%;
+    width: 80%;
     padding: 10px;
 }
 
 .blogs form button {
     all: unset;
-    width: 10%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,25 +88,35 @@
 
 .blogs .stage {
     margin: 40px 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .blogs .stage .item {
+    width: calc(100% * (1/4) - 20px);
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
     border: 1px solid var(--yellow);
+    border-radius: 10px;
 }
 
 .blogs .stage .item h3 {
     font-size: 25px;
+    font-weight: bold;
 }
 
 .blogs .stage .item p {
     margin-bottom: 20px;
+}
+
+.blogs .stage .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .blogs .stage .tags {
@@ -117,4 +132,41 @@
     background-color: var(--yellow);
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .hero {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .hero .content {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .hero .content h1 {
+        font-size: 30px;
+    }
+
+    .blogs form {
+        width: 80%;
+    }
+
+    .blogs .stage .item {
+        width: 100%;
+    }
+
+    .blogs .stage .item img {
+        height: 150px;
+    }
+
+    .blogs .stage .tags button {
+        padding: 3px 5px;
+    }
 }
