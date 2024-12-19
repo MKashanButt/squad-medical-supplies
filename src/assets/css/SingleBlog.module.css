@@ -71,3 +71,33 @@
     text-align: center;
     font-size: 30px;
 }
+
+@media (max-width: 640px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        width: 90%;
+    }
+
+    .body {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .body .stage .item {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .body .stage .item:nth-of-type(2) {
+        padding-left: 0;
+    }
+
+    .body .stage {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
