@@ -11,7 +11,7 @@ export default function PopupForm({ id, onClose }: PopupDialogProps) {
             <div className="content">
                 <button className="close" onClick={onClose}>X</button>
                 <form action="/form.php" method="post" id="contactUs">
-                    <h2>Get your diabetic supplies at little or no cost</h2>
+                    <h2>Get Your Desired Product or Sevice</h2>
                     <p>Enter your information below in this quick profile to check your eligibility.</p>
                     <div className="stage">
                         <div className="field">
