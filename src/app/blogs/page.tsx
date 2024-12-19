@@ -9,12 +9,14 @@ import cgm from "@/assets/images/cgm-hero.jpg"
 import covid from "@/assets/images/covid-hero.jpg"
 import medicalEquipment from "@/assets/images/medical-equipment-hero.jpg"
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface Blog {
     image: StaticImageData,
     title: string,
     content: string,
     tags: string,
+    link: string
 }
 
 export default function Blogs() {
@@ -24,25 +26,29 @@ export default function Blogs() {
             'image': medicalPolicy,
             'title': 'How the 2025 Medicare Policy Changes Impact Your Access to Medical Supplies',
             'content': "Medicare's rules are always changing to accommodate patients' increasing demands and increase access to healthcare in general. Beneficiaries' access to durable medical equipment (DME) will be directly impacted by the major changes introduced in the 2025 revisions. These upgrades include enhanced access to certain equipment types, new invoicing practices, and updated coverage criteria....",
-            'tags': ''
+            'tags': '',
+            'link': '/blogs/2025-medicare-policy-changes',
         },
         {
             'image': cgm,
             'title': 'The Advantages of Continuous Glucose Monitoring: What Medicare Will Cover in 2025',
             'content': "Continuous glucose monitors (CGMs) are now a crucial component of the toolset needed to properly manage diabetes. Medicare has increased its coverage for CGMs in response to the rising prevalence of diabetes in the US, giving patients more access. Patients may more easily purchase and utilize CGMs in 2025 because to these regulatory improvements, which also make it simpler for them....",
-            'tags': ''
+            'tags': '',
+            'link': '/blogs/continuous-glucose-monitoring',
         },
         {
             'image': covid,
             'title': "Navigating COVID-19: Tips, Updates, and Resources for Your Health and Safety",
             'content': "Globally, the COVID-19 epidemic has changed day-to-day living. It has emphasized the value of teamwork, improvements in healthcare, and access to trustworthy information since it began in late 2019. This blog offers crucial information and practical advice to enable you to handle these extraordinary times with fortitude and well-informed care....",
-            'tags': ''
+            'tags': '',
+            'link': '/blogs/covid-19',
         },
         {
             'image': medicalEquipment,
             'title': "Medicare's Top Durable Medical Devices for 2025",
             'content': "Healthcare is changing quickly, and in-home medical equipment (DME) is a key component of this change. The way people access and utilize medical equipment in their homes will be completely transformed by 2025 due to changes in Medicare laws, technological improvements, and a greater focus on patient-centered care....",
-            'tags': ''
+            'tags': '',
+            'link': '/blogs/medical-devices-2025',
         },
     ]
 
@@ -86,18 +92,20 @@ export default function Blogs() {
                     {
                         filteredBlogs.map(blog => (
                             <div className={styles.item}>
-                                <Image src={blog.image} alt={blog.title} />
-                                <h3>{blog.title}</h3>
-                                <p>{blog.content}</p>
-                                {blog.tags.split(',').map(tag => (
-                                    tag ??
-                                    <div className={styles.tags}>
-                                        <button>{tag}</button>
-                                        <button>{tag}</button>
-                                        <button>{tag}</button>
-                                        <button>{tag}</button>
-                                    </div>
-                                ))}
+                                <Link href={blog.link}>
+                                    <Image src={blog.image} alt={blog.title} />
+                                    <h3>{blog.title}</h3>
+                                    <p>{blog.content}</p>
+                                    {blog.tags.split(',').map(tag => (
+                                        tag ??
+                                        <div className={styles.tags}>
+                                            <button>{tag}</button>
+                                            <button>{tag}</button>
+                                            <button>{tag}</button>
+                                            <button>{tag}</button>
+                                        </div>
+                                    ))}
+                                </Link>
                             </div>
                         ))
                     }
