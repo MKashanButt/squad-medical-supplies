@@ -191,7 +191,7 @@ h4 {
 }
 
 .active-link {
-  background-color: var(--blue);
+  background-color: var(--yellow);
   color: white;
 }
 

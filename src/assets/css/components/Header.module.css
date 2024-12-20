@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 10px 10px;
     align-items: center;
-    background-color: var(--blue);
+    background-color: var(--yellow);
     color: white;
 }
 

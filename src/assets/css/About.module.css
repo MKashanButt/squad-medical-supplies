@@ -350,7 +350,7 @@
     justify-content: center;
     margin: 40px 0;
     padding: 35px 0;
-    background-color: var(--blue);
+    background-color: var(--yellow);
     position: relative;
     margin-top: 90px;
 }
@@ -375,7 +375,6 @@
     width: 90%;
     margin: 40px auto;
     display: flex;
-    background-color: var(--blue);
     user-select: none;
 }
 
@@ -391,6 +390,10 @@
 
 .howToBuy .item:nth-of-type(1) {
     border: none;
+}
+
+.howToBuy .item h3 {
+    color: white;
 }
 
 .howToBuy .item .icon {

@@ -149,7 +149,7 @@
 .chossingSquadMedSupplies .stage {
     width: 100%;
     display: flex;
-    background-color: var(--blue);
+    background-color: var(--yellow);
     color: white;
     padding: 25px;
 }
@@ -158,6 +158,10 @@
     width: calc(100% * (1/4));
     border-left: 1px solid;
     padding: 25px;
+}
+
+.chossingSquadMedSupplies .stage .item h3 {
+    color: white;
 }
 
 .chossingSquadMedSupplies .stage .item:nth-of-type(1) {
@@ -264,9 +268,9 @@
 .cta button {
     width: 20%;
     padding: 10px;
-    background-color: var(--blue);
+    background-color: var(--yellow);
     color: white;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--yellow);
     z-index: 90;
     cursor: pointer;
 }
