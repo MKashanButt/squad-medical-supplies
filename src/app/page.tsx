@@ -128,13 +128,11 @@ export default function Home() {
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M328 112L184 256l144 144" />
               </svg>
             </button>
-            <Link href="/about">
-              <button ref={navigationNextRef}>
-                <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
-                  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M184 112l144 144-144 144" />
-                </svg>
-              </button>
-            </Link>
+            <button ref={navigationNextRef}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M184 112l144 144-144 144" />
+              </svg>
+            </button>
           </div>
         </Swiper>
       </section>
